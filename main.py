@@ -21,6 +21,7 @@ year = []
 
 episodeData = soup.findAll('div', attrs= {'class': 'list_item'})
 
+
 for i in episodeData:
     episode = i.div.a.text.replace('\n','')
     episodeSeason.append(episode)
@@ -29,8 +30,8 @@ for i in episodeData:
     name = episodeTitle.text
     episodeName.append(name)
 
-    date = i.div.find('div', class_ = 'airdate').text
-    year.append(date)
+    #date = i.div.find('div', class_ = 'airdate').text
+    #year.append(date)
 
 print(episodeName)
 print(episodeSeason)
