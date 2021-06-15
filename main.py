@@ -11,7 +11,6 @@ import re
 from bs4 import BeautifulSoup
 import numpy as np
 
-
 class Episode:
     def __init__(self, name, season, reviewLink, year):
         self.name = name
@@ -29,40 +28,20 @@ soup = BeautifulSoup(response.content, 'html.parser')
 
 episodes = []
 episodeData = soup.findAll('div', attrs={'class': 'list_item'})
-date = soup.findAll("div", {"class": "airdate"})
-print(date)
+
+print("Program Start \n\n")
 
 for i in episodeData:
-    season = i.div.a.text
+    season = i.div.a.text.replace('\n', '')
     print(season)
     episodeTitle = soup.strong.extract()
-    name = episodeTitle.text
+    name = episodeTitle.text.replace('\n', '')
     print(name)
-
-'''
-episodeName = []
-episodeSeason = []
-rating = []
-reviews = []
-years = []
-
-episodeData = soup.findAll('div', attrs={'class': 'list_item'})
-
-for i in episodeData:
-    episode = i.div.a.text.replace('\n', '')
-    episodeSeason.append(episode)
-
-    episodeTitle = soup.strong.extract()
-    epName = episodeTitle.text
-    episodeName.append(epName)
-
-    # date = i.div.find('div', class_ = 'airdate').text
-    # years.append(date)
-
-print(episodeName)
-print(episodeSeason)
-print(years)
-'''
+    rating = i.find('div', class_ = 'ipl-rating-star small').text.replace('\n', '')
+    print(rating[:-7])
+    date = i.find('div', class_ = 'airdate').text.replace(' ', '').replace('\n', '')
+    print(date)
+    print("\n")
 
 
 ######### Extract the Data and Build the Model  ###########
@@ -73,19 +52,19 @@ def wordFrequency(paragraph):
     wordFreq = []
     for w in wordList:
         wordFreq.append(wordList.count(w))
-    print("Review\n" + paragraph)
-    print("List\n" + str(wordList) + "\n")
-    print("Frequencies\n" + str(wordFreq) + "\n")
-    print("Pairs\n" + str(list(zip(wordList, wordFreq))))
+    print("Review:\n" + paragraph)
+    print("List:\n" + str(wordList) + "\n")
+    print("Frequencies:\n" + str(wordFreq) + "\n")
+    print("Pairs:\n" + str(list(zip(wordList, wordFreq))))
 
 
 def wordFrequency1(wordList):
     wordFreq = []
     for w in wordList:
         wordFreq.append(wordList.count(w))
-    print("List\n" + str(wordList) + "\n")
-    print("Frequencies\n" + str(wordFreq) + "\n")
-    print("Pairs\n" + str(list(zip(wordList, wordFreq))))
+    print("List:\n" + str(wordList) + "\n")
+    print("Frequencies:\n" + str(wordFreq) + "\n")
+    print("Pairs:\n" + str(list(zip(wordList, wordFreq))))
 
 
 # method to remove stopwords from a given paragraph
@@ -102,6 +81,7 @@ stopWordFile = open("Stopword_File.txt", "r")
 stopWordList = stopWordFile.read()
 stopWordFile.close()
 print(stopWordList)
+print("\n\n")
 
 # Extract the review data given a review URL of an episode
 url1 = 'https://www.imdb.com/title/tt0098286/reviews/?ref_=tt_ql_urv'
@@ -110,6 +90,9 @@ soup1 = BeautifulSoup(response1.content, 'html.parser')
 # lister-item-content can be used to find review ratings
 reviewData = soup1.findAll('div', attrs={'class': 'content'})
 # iterate through all reviews of the season, clean the string and count the word frequency for each word
+
+rate =[]
+
 for i in reviewData:
     review = i.div.text
     review = review.lower()
@@ -123,3 +106,7 @@ for i in reviewData:
     wordFrequency(finalReview)
 
 print("\nProgram Terminated.\n")
+
+
+
+
