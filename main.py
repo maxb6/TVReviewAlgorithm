@@ -29,6 +29,8 @@ soup = BeautifulSoup(response.content, 'html.parser')
 
 episodes=[]
 episodeData = soup.findAll('div', attrs={'class': 'list_item'})
+date = soup.findAll("div", {"class": "airdate"})
+print(date)
 
 for i in episodeData:
     season = i.div.a.text
@@ -36,8 +38,7 @@ for i in episodeData:
     episodeTitle = soup.strong.extract()
     name = episodeTitle.text
     print(name)
-    date = i.div.text
-    print(date)
+   
 
 
 
