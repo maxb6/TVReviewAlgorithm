@@ -32,7 +32,9 @@ seasonEpisodeNum = []
 episodeName = []
 episodeRating = []
 episodeDate = []
+episodeLink = []
 reviewLink = []
+
 
 print("Program Start: \n\n")
 
@@ -41,27 +43,61 @@ for i in episodeData:
     # Webscraping the episode number and season number
     season_episode = i.div.a.text.replace('\n', '')
     seasonEpisodeNum.append(season_episode)
-    #print("Season and Episode Number:" + str(season_episode))
+    print("Season and Episode Number:" + str(season_episode))
     # Webscraping the episode title
     episodeTitle = soup.strong.extract()
     name = episodeTitle.text.replace('\n', '')
     episodeName.append(name)
-    #print("Episode Title: " +str(name))
+    print("Episode Title: " +str(name))
     # Webscraping the episode rating
     rating = i.find('div', class_ = 'ipl-rating-star small').text.replace('\n', '')
     episodeRating.append(rating[:-7])
-    #rint("Episode Rating: " + str(rating[:-7]))
+    print("Episode Rating: " + str(rating[:-7]))
     # Webscraping the episode date
     date = i.find('div', class_ = 'airdate').text.replace(' ', '').replace('\n', '').replace('.', '')
     episodeDate.append(date[-4:])
-    #print("Episode Date of Release: " + str(date[-4:]))
+    print("Episode Date of Release: " + str(date[-4:]))
+    #pageLink = soup.strong.extract()
+    #if pageLink.has_attr('href'):
+    episodeLink = i.find('a').get('href')
     
-    #print("\n")
+    urlOfEpisode = 'https://www.imdb.com'+str(episodeLink)
+    print("Episode Link: " +str(urlOfEpisode))
+    #episodeLink.append(urlOfEpisode)
+    '''
+    responseOfEpisode = requests.get(urlOfEpisode)
+    soupOfEpisode = BeautifulSoup(responseOfEpisode.content, 'html.parser')
+    episodeLinkData = soupOfEpisode.findAll('div', attrs={'class': 'vital'})
+
+    links = []
+    for j in episodeLinkData:
+        linkReview = j.find('a').get('href')
+        links.append(linkReview)
+        #print("Review Link: " + str(linkReview))
+
+    print("Review Link: " + str(links))
+    '''
+    print("\n")
+
+
+'''
+for i in len(episodeLink):
+    responseOfEpisode = requests.get(episodeLink)
+    soupOfEpisode = BeautifulSoup(responseOfEpisode.content, 'html.parser')
+    episodeLinkData = soupOfEpisode.findAll('div', attrs={'class': 'vital'})
+
+    for j in episodeLinkData:
+        review = i.find('a').get('href')
+        print("Review Link: " + str(review))
+'''
+
 
 # Building DataFrame
 season_DF = pd.DataFrame({'Name': episodeName, 'Season': seasonEpisodeNum, 'Rating': episodeRating, 'Year': episodeDate})
 print(season_DF)
 print("\n\n")
+
+
 
 
 ######### Extract the Data and Build the Model  ###########
