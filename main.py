@@ -32,6 +32,7 @@ seasonEpisodeNum = []
 episodeName = []
 episodeRating = []
 episodeDate = []
+reviewLink = []
 
 print("Program Start: \n\n")
 
@@ -51,11 +52,13 @@ for i in episodeData:
     episodeRating.append(rating[:-7])
     #rint("Episode Rating: " + str(rating[:-7]))
     # Webscraping the episode date
-    date = i.find('div', class_ = 'airdate').text.replace(' ', '').replace('\n', '')
-    episodeDate.append(date)
-    #print("Episode Date of Release: " + str(date))
+    date = i.find('div', class_ = 'airdate').text.replace(' ', '').replace('\n', '').replace('.', '')
+    episodeDate.append(date[-4:])
+    #print("Episode Date of Release: " + str(date[-4:]))
+    
     #print("\n")
 
+# Building DataFrame
 season_DF = pd.DataFrame({'Name': episodeName, 'Season': seasonEpisodeNum, 'Rating': episodeRating, 'Year': episodeDate})
 print(season_DF)
 print("\n\n")
