@@ -26,22 +26,39 @@ url = 'https://www.imdb.com/title/tt0098904/episodes?season=1&ref_=ttep_ep_sn_pv
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
-episodes = []
 episodeData = soup.findAll('div', attrs={'class': 'list_item'})
 
-print("Program Start \n\n")
+seasonEpisodeNum = []
+episodeName = []
+episodeRating = []
+episodeDate = []
 
+print("Program Start: \n\n")
+
+# Webscraping 
 for i in episodeData:
-    season = i.div.a.text.replace('\n', '')
-    print(season)
+    # Webscraping the episode number and season number
+    season_episode = i.div.a.text.replace('\n', '')
+    seasonEpisodeNum.append(season_episode)
+    #print("Season and Episode Number:" + str(season_episode))
+    # Webscraping the episode title
     episodeTitle = soup.strong.extract()
     name = episodeTitle.text.replace('\n', '')
-    print(name)
+    episodeName.append(name)
+    #print("Episode Title: " +str(name))
+    # Webscraping the episode rating
     rating = i.find('div', class_ = 'ipl-rating-star small').text.replace('\n', '')
-    print(rating[:-7])
+    episodeRating.append(rating[:-7])
+    #rint("Episode Rating: " + str(rating[:-7]))
+    # Webscraping the episode date
     date = i.find('div', class_ = 'airdate').text.replace(' ', '').replace('\n', '')
-    print(date)
-    print("\n")
+    episodeDate.append(date)
+    #print("Episode Date of Release: " + str(date))
+    #print("\n")
+
+season_DF = pd.DataFrame({'Name': episodeName, 'Season': seasonEpisodeNum, 'Rating': episodeRating, 'Year': episodeDate})
+print(season_DF)
+print("\n\n")
 
 
 ######### Extract the Data and Build the Model  ###########
