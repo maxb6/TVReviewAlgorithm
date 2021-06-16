@@ -258,6 +258,7 @@ season_DF = pd.DataFrame(
 print(season_DF)
 print("\n\n")
 
-season_DF.to_csv('data.csv', index = False)
+# Putting Datafram into data.csv file
+season_DF.to_csv('data.csv', sep = '|', encoding='utf-8')
 
 print("\nProgram Terminated.\n")
