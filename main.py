@@ -67,6 +67,9 @@ negativeWords = []
 FreqPositiveWords = []
 FreqNegativeWords = []
 
+titleReview = []
+ratingReview = []
+
 def extractReviewData(reviewURL):
     # Extract the review data given a review URL of an episode
     response1 = requests.get(reviewURL)
@@ -98,12 +101,15 @@ def extractReviewData(reviewURL):
             # Assign positive or negative review status
             if r.reviewRating >= 8:
                 r.isPositive = True
+                ratingReview.append(r.isPositive)
             else:
                 r.isPositive = False
+                ratingReview.append(r.isPositive)
             print("Is the review Positive? " + str(r.isPositive))
 
             # get the review Title
             r.title = j.find('a', class_='title').text.replace('\n', '')
+            titleReview.append(r.title)
             print("Review Title: ", r.title)
 
             # get the actual review
@@ -292,7 +298,7 @@ print("\n\n")
 # Putting Datafram into data.csv file
 season_DF.to_csv('data.csv', sep = '|', encoding='utf-8')
 
-# Creating the Model and Calculating Probabilitiea
+# Creating the Model and Calculating Probabilities
 #wordList = []
 #wordList = positiveWords.extend(negativeWords)
 
@@ -300,18 +306,37 @@ season_DF.to_csv('data.csv', sep = '|', encoding='utf-8')
 #print(FreqNegativeWords)
 
 # Writing to model.txt
-count = 1
+count1 = 1
 modelFile = open("model.txt", 'w')
 for i in positiveWords:
     for j in i:
-        modelFile.write("No." + str(count) +"  "+ str(j.replace('.','').replace(',','').replace('"','')) + "\n")
+        modelFile.write("No." + str(count1) +"  "+ str(j.replace('.','').replace(',','').replace('"','')) + "\n")
         modelFile.write(str(wordFrequForPos(j)) + ", " + str(condProbabilityPos(j)) + ", " + str(wordFrequForNeg(j)) + ", " + str(condProbabilityNeg(j)) + "\n\n")
-        count += 1
+        count1 += 1
 
 for i in negativeWords:
     for j in i:
-        modelFile.write("No." + str(count) +"  "+ str(j.replace('.','').replace(',','').replace('"','')) + "\n")
+        modelFile.write("No." + str(count1) +"  "+ str(j.replace('.','').replace(',','').replace('"','')) + "\n")
         modelFile.write(str(wordFrequForPos(j)) + ", " + str(condProbabilityPos(j)) + ", " + str(wordFrequForNeg(j)) + ", " + str(condProbabilityNeg(j)) + "\n\n")
-        count += 1
+        count1 += 1
+
+
+# Creating result.txt file
+resultFile = open("result.txt", "w")
+
+'''
+for n, i in enumerate(ratingReview):
+    if i == True:
+        ratingReview[n] == "Positive"
+    else:
+        ratingReview[n] == "Negative"
+'''
+count2 = 1
+for i in titleReview:
+    resultFile.write("No." + str(count2) +"  "+ str(i) + "\n")
+    resultFile.write(" , " + " , " + " , " + " , " + "\n\n")
+    count2 += 1
+
+
 
 print("\nProgram Terminated.\n")
