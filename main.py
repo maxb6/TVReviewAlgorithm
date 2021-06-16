@@ -127,6 +127,7 @@ for i in episodeData:
     print("Review Link: " + str(urlOfEpisode) + "reviews?ref_=tt_ov_rt")
     extractReviewData(urlOfReview)
 
+
 # Building DataFrame
 season_DF = pd.DataFrame(
     {'Name': episodeName, 'Season': seasonEpisodeNum, 'Rating': episodeRating, 'Year': episodeDate})
