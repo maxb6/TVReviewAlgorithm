@@ -1,4 +1,4 @@
-# COMP472 - Assignment 2
+# COMP472 - Assignment 2 - Summer 2021
 # Programmed By:
 # Constantine Karellas - 40109253
 # Max Burah - 40077075
@@ -140,12 +140,6 @@ def extractReviewData(reviewURL):
     print("Negative Word List:\n" + str(negWordList) + "\n")
 
 
-url = 'https://www.imdb.com/title/tt0098904/episodes?season=1&ref_=ttep_ep_sn_pv'
-response = requests.get(url)
-soup = BeautifulSoup(response.content, 'html.parser')
-
-episodeData = soup.findAll('div', attrs={'class': 'list_item'})
-
 seasonEpisodeNum = []
 episodeName = []
 episodeRating = []
@@ -153,16 +147,22 @@ episodeDate = []
 episodeLink = []
 reviewLink = []
 
+
+url1 = 'https://www.imdb.com/title/tt0098904/episodes?season=1&ref_=ttep_ep_sn_pv'
+response1 = requests.get(url1)
+soup1 = BeautifulSoup(response1.content, 'html.parser')
+episodeData1 = soup1.findAll('div', attrs={'class': 'list_item'})
+
 print("Program Start: \n\n")
 
-# Webscraping 
-for i in episodeData:
+# Webscraping for Season 1
+for i in episodeData1:
     # Webscraping the episode number and season number
     season_episode = i.div.a.text.replace('\n', '')
     seasonEpisodeNum.append(season_episode)
     print("Season and Episode Number:" + str(season_episode))
     # Webscraping the episode title
-    episodeTitle = soup.strong.extract()
+    episodeTitle = soup1.strong.extract()
     name = episodeTitle.text.replace('\n', '')
     episodeName.append(name)
     print("Episode Title: " + str(name))
@@ -179,13 +179,86 @@ for i in episodeData:
     episodeLink = i.find('a').get('href')
     urlOfEpisode = 'https://www.imdb.com' + str(episodeLink)
     urlOfReview = str(urlOfEpisode) + "reviews?ref_=tt_ov_rt"
-    print("Review Link: " + str(urlOfEpisode) + "reviews?ref_=tt_ov_rt")
+    reviewLink.append(urlOfReview)
+    print("Review Link: " + str(urlOfReview))
+    print("\n")
     extractReviewData(urlOfReview)
 
+url2 = 'https://www.imdb.com/title/tt0098904/episodes?season=2'
+response2 = requests.get(url2)
+soup2 = BeautifulSoup(response2.content, 'html.parser')
+episodeData2 = soup2.findAll('div', attrs={'class': 'list_item'})
+
+# Webscraping for Season 2
+for i in episodeData2:
+    # Webscraping the episode number and season number
+    season_episode = i.div.a.text.replace('\n', '')
+    seasonEpisodeNum.append(season_episode)
+    print("Season and Episode Number:" + str(season_episode))
+    # Webscraping the episode title
+    episodeTitle = soup2.strong.extract()
+    name = episodeTitle.text.replace('\n', '')
+    episodeName.append(name)
+    print("Episode Title: " + str(name))
+    # Webscraping the episode rating
+    rating = i.find('div', class_='ipl-rating-star small').text.replace('\n', '')
+    episodeRating.append(rating[:-7])
+    print("Episode Rating: " + str(rating[:-7]))
+    # Webscraping the episode date
+    date = i.find('div', class_='airdate').text.replace(' ', '').replace('\n', '').replace('.', '')
+    episodeDate.append(date[-4:])
+    print("Episode Date of Release: " + str(date[-4:]))
+    # pageLink = soup.strong.extract()
+    # if pageLink.has_attr('href'):
+    episodeLink = i.find('a').get('href')
+    urlOfEpisode = 'https://www.imdb.com' + str(episodeLink)
+    urlOfReview = str(urlOfEpisode) + "reviews?ref_=tt_ov_rt"
+    reviewLink.append(urlOfReview)
+    print("Review Link: " + str(urlOfReview))
+    print("\n")
+
+url3 = 'https://www.imdb.com/title/tt0098904/episodes?season=3'
+response3 = requests.get(url3)
+soup3 = BeautifulSoup(response3.content, 'html.parser')
+episodeData3 = soup3.findAll('div', attrs={'class': 'list_item'})
+
+# Webscraping for Season 3
+for i in episodeData3:
+    # Webscraping the episode number and season number
+    season_episode = i.div.a.text.replace('\n', '')
+    seasonEpisodeNum.append(season_episode)
+    print("Season and Episode Number:" + str(season_episode))
+    # Webscraping the episode title
+    episodeTitle = soup3.strong.extract()
+    name = episodeTitle.text.replace('\n', '')
+    episodeName.append(name)
+    print("Episode Title: " + str(name))
+    # Webscraping the episode rating
+    rating = i.find('div', class_='ipl-rating-star small').text.replace('\n', '')
+    episodeRating.append(rating[:-7])
+    print("Episode Rating: " + str(rating[:-7]))
+    # Webscraping the episode date
+    date = i.find('div', class_='airdate').text.replace(' ', '').replace('\n', '').replace('.', '')
+    episodeDate.append(date[-4:])
+    print("Episode Date of Release: " + str(date[-4:]))
+    # pageLink = soup.strong.extract()
+    # if pageLink.has_attr('href'):
+    episodeLink = i.find('a').get('href')
+    urlOfEpisode = 'https://www.imdb.com' + str(episodeLink)
+    urlOfReview = str(urlOfEpisode) + "reviews?ref_=tt_ov_rt"
+    reviewLink.append(urlOfReview)
+    print("Review Link: " + str(urlOfReview))
+    print("\n")
+
+
 # Building DataFrame
+print("\n\n")
 season_DF = pd.DataFrame(
-    {'Name': episodeName, 'Season': seasonEpisodeNum, 'Rating': episodeRating, 'Year': episodeDate})
+    {'Name': episodeName, 'Season': seasonEpisodeNum, 'Review Link': reviewLink, 'Year': episodeDate})
 print(season_DF)
 print("\n\n")
+
+# Putting Datafram into data.csv file
+season_DF.to_csv('data.csv', sep = '|', encoding='utf-8')
 
 print("\nProgram Terminated.\n")
