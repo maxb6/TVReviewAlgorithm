@@ -62,6 +62,10 @@ stopWordList = stopWordFile.read()
 stopWordFile.close()
 print("\n\n")
 
+positiveWords = []
+negativeWords = []
+FreqPositiveWords = []
+FreqNegativeWords = []
 
 def extractReviewData(reviewURL):
     # Extract the review data given a review URL of an episode
@@ -119,16 +123,20 @@ def extractReviewData(reviewURL):
             # check if review is positive or negative and place in corresponding list
             if r.isPositive:
                 posWordList.append(r.review.split())
+                positiveWords.append(r.review.split())
                 for w in posWordList:
                     posWordFreq.append(posWordList.count(w))
+                    FreqPositiveWords.append(posWordList.count(w))
                 # print("Review:\n" + r.review)
                 # print("Positive Word List:\n" + str(posWordList) + "\n")
                 posWordCount += wordCount
 
             else:
                 negWordList.append(r.review.split())
+                negativeWords.append(r.review.split())
                 for w in negWordList:
                     negWordFreq.append(negWordList.count(w))
+                    FreqNegativeWords.append(negWordList.count(w))
                 # print("Review:\n" + r.review)
                 # print("Negative Word List:\n" + str(negWordList) + "\n")
                 negWordCount += wordCount
@@ -139,6 +147,27 @@ def extractReviewData(reviewURL):
     print("Negative Word Count:\n" + str(negWordCount))
     print("Negative Word List:\n" + str(negWordList) + "\n")
 
+def wordFrequForPos(str):
+    counter = 1
+    for i in positiveWords:
+        if str == i:
+            counter += 1
+    return counter
+
+def wordFrequForNeg(str):
+    counter = 1
+    for j in negativeWords:
+        if str == j:
+            counter += 1
+    return counter
+
+def condProbabilityPos(str):
+    proability = wordFrequForPos(str) / len(positiveWords)
+    return proability
+
+def condProbabilityNeg(str):
+    proability = wordFrequForNeg(str) / len(negativeWords)
+    return proability
 
 seasonEpisodeNum = []
 episodeName = []
@@ -181,8 +210,8 @@ for i in episodeData1:
     urlOfReview = str(urlOfEpisode) + "reviews?ref_=tt_ov_rt"
     reviewLink.append(urlOfReview)
     print("Review Link: " + str(urlOfReview))
-    print("\n")
     extractReviewData(urlOfReview)
+    print("\n")
 
 url2 = 'https://www.imdb.com/title/tt0098904/episodes?season=2'
 response2 = requests.get(url2)
@@ -215,6 +244,7 @@ for i in episodeData2:
     urlOfReview = str(urlOfEpisode) + "reviews?ref_=tt_ov_rt"
     reviewLink.append(urlOfReview)
     print("Review Link: " + str(urlOfReview))
+    extractReviewData(urlOfReview)
     print("\n")
 
 url3 = 'https://www.imdb.com/title/tt0098904/episodes?season=3'
@@ -248,6 +278,7 @@ for i in episodeData3:
     urlOfReview = str(urlOfEpisode) + "reviews?ref_=tt_ov_rt"
     reviewLink.append(urlOfReview)
     print("Review Link: " + str(urlOfReview))
+    extractReviewData(urlOfReview)
     print("\n")
 
 
@@ -260,5 +291,27 @@ print("\n\n")
 
 # Putting Datafram into data.csv file
 season_DF.to_csv('data.csv', sep = '|', encoding='utf-8')
+
+# Creating the Model and Calculating Probabilitiea
+#wordList = []
+#wordList = positiveWords.extend(negativeWords)
+
+#print(FreqPositiveWords)
+#print(FreqNegativeWords)
+
+# Writing to model.txt
+count = 1
+modelFile = open("model.txt", 'w')
+for i in positiveWords:
+    for j in i:
+        modelFile.write("No." + str(count) +"  "+ str(j.replace('.','').replace(',','').replace('"','')) + "\n")
+        modelFile.write(str(wordFrequForPos(j)) + ", " + str(condProbabilityPos(j)) + ", " + str(wordFrequForNeg(j)) + ", " + str(condProbabilityNeg(j)) + "\n\n")
+        count += 1
+
+for i in negativeWords:
+    for j in i:
+        modelFile.write("No." + str(count) +"  "+ str(j.replace('.','').replace(',','').replace('"','')) + "\n")
+        modelFile.write(str(wordFrequForPos(j)) + ", " + str(condProbabilityPos(j)) + ", " + str(wordFrequForNeg(j)) + ", " + str(condProbabilityNeg(j)) + "\n\n")
+        count += 1
 
 print("\nProgram Terminated.\n")
