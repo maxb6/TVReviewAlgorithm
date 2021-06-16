@@ -324,17 +324,20 @@ for i in negativeWords:
 # Creating result.txt file
 resultFile = open("result.txt", "w")
 
-'''
-for n, i in enumerate(ratingReview):
+pos = 'positive'
+neg = 'negative'
+ratingPosNeg = []
+for i in ratingReview:
     if i == True:
-        ratingReview[n] == "Positive"
+        ratingPosNeg.append(pos)
     else:
-        ratingReview[n] == "Negative"
-'''
+        ratingPosNeg.append(neg)
+
+
 count2 = 1
 for i in titleReview:
     resultFile.write("No." + str(count2) +"  "+ str(i) + "\n")
-    resultFile.write(" , " + " , " + " , " + " , " + "\n\n")
+    resultFile.write(" , " + " , " + " , "+ str(ratingPosNeg) + " , " + "\n\n")
     count2 += 1
 
 
