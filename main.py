@@ -23,6 +23,17 @@ class Episode:
         print(self.name, " ", self.season, " ", self.reviewLink, " ", self.year)
 
 
+class Review:
+    def __init__(self, title, review, reviewRating, isPositive):
+        self.title = title
+        self.review = review
+        self.reviewRating = reviewRating
+        self.isPositive = isPositive
+
+    def printReview(self):
+        print(self.title, " ", self.review, " ", self.reviewRating, " ", self.isPositive)
+
+
 ######### Extract the Data and Build the Model  ###########
 # Using words for tokens in this model
 # Method to count word frequency for a review
@@ -37,17 +48,7 @@ def wordFrequency(paragraph):
     print("Pairs:\n" + str(list(zip(wordList, wordFreq))))
 
 
-def wordFrequency1(wordList):
-    wordFreq = []
-    for w in wordList:
-        wordFreq.append(wordList.count(w))
-    print("List:\n" + str(wordList) + "\n")
-    print("Frequencies:\n" + str(wordFreq) + "\n")
-    print("Pairs:\n" + str(list(zip(wordList, wordFreq))))
-
-
 # method to remove stopwords from a given paragraph
-
 def removeStopwords(paragraph, stopwords):
     wordList = paragraph.split()
     resultWords = [word for word in wordList if word not in stopwords]
@@ -67,22 +68,76 @@ def extractReviewData(reviewURL):
     response1 = requests.get(reviewURL)
     soup1 = BeautifulSoup(response1.content, 'html.parser')
     # lister-item-content can be used to find review ratings
-    reviewData = soup1.findAll('div', attrs={'class': 'content'})
+    reviewData = soup1.findAll('div', attrs={'class': 'lister-item-content'})
+
+    # before entering the loop, create empty wordLists and wordFrequencies for positive and negative reviews
+    posWordList = []
+    posWordFreq = []
+    posWordCount = 0
+    negWordList = []
+    negWordFreq = []
+    negWordCount = 0
+
     # iterate through all reviews of the season, clean the string and count the word frequency for each word
-
-    rate = []
-
     for j in reviewData:
-        review = j.div.text
-        review = review.lower()
-        # find word count
-        wordCount = len(review.split())
-        print(wordCount)
-        # clean review by inserting <s>
-        cleanReview = review.replace(".", " <s>")
-        cleanReview = "<s> " + cleanReview
-        finalReview = removeStopwords(cleanReview, stopWordList)
-        wordFrequency(finalReview)
+        r = Review(None, None, None, None)
+        # Find review rating, only consider reviews that have a rating
+        if j.find('div', class_='ipl-ratings-bar') is not None:
+            reviewRating = j.find('div', class_='ipl-ratings-bar').text.replace('\n', '')
+            if len(reviewRating) == 5:
+                r.reviewRating = int(reviewRating[0:2])
+            else:
+                r.reviewRating = int(reviewRating[0:1])
+
+            print("rating scale: " + str(r.reviewRating))
+
+            # Assign positive or negative review status
+            if r.reviewRating >= 8:
+                r.isPositive = True
+            else:
+                r.isPositive = False
+            print("Is the review Positive? " + str(r.isPositive))
+
+            # get the review Title
+            r.title = j.find('a', class_='title').text.replace('\n', '')
+            print("Review Title: ", r.title)
+
+            # get the actual review
+            r.review = j.find('div', class_='content').div.text.lower()
+            print("Review text: ", r.review)
+
+            # find word count
+            wordCount = len(r.review.split())
+            # print(wordCount)
+            # clean review by inserting <s>
+            r.review.replace(".", " <s> ")
+            r.review.replace("(", " ")
+            r.review.replace(")", " ")
+            r.review = "<s> " + r.review
+            r.review = removeStopwords(r.review, stopWordList)
+
+            # check if review is positive or negative and place in corresponding list
+            if r.isPositive:
+                posWordList.append(r.review.split())
+                for w in posWordList:
+                    posWordFreq.append(posWordList.count(w))
+                # print("Review:\n" + r.review)
+                # print("Positive Word List:\n" + str(posWordList) + "\n")
+                posWordCount += wordCount
+
+            else:
+                negWordList.append(r.review.split())
+                for w in negWordList:
+                    negWordFreq.append(negWordList.count(w))
+                # print("Review:\n" + r.review)
+                # print("Negative Word List:\n" + str(negWordList) + "\n")
+                negWordCount += wordCount
+
+    # we have obtained a list of all negative words and all positive words plus their respective counts
+    print("Positive Word Count:\n" + str(posWordCount))
+    print("Positive Word List:\n" + str(posWordList) + "\n")
+    print("Negative Word Count:\n" + str(negWordCount))
+    print("Negative Word List:\n" + str(negWordList) + "\n")
 
 
 url = 'https://www.imdb.com/title/tt0098904/episodes?season=1&ref_=ttep_ep_sn_pv'
@@ -126,7 +181,6 @@ for i in episodeData:
     urlOfReview = str(urlOfEpisode) + "reviews?ref_=tt_ov_rt"
     print("Review Link: " + str(urlOfEpisode) + "reviews?ref_=tt_ov_rt")
     extractReviewData(urlOfReview)
-
 
 # Building DataFrame
 season_DF = pd.DataFrame(
