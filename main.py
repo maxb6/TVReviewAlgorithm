@@ -208,7 +208,7 @@ def computeProbability(dictPos, dictNeg):
 
 ############################# RUN CODE ##############################
 
-print("Program Start\n")
+print("\nProgram Start:\n")
 # Use extract review data to create complete positive and negative word lists
 
 season1URL = 'https://www.imdb.com/title/tt0098904/episodes?season=1&ref_=ttep_ep_sn_pv'
@@ -355,6 +355,39 @@ for i in episodeData3:
     reviewLink.append(urlOfReview)
     # print("Review Link: " + str(urlOfReview))
 
+url4 = 'https://www.imdb.com/title/tt0098904/episodes?season=4'
+response4 = requests.get(url4)
+soup4 = BeautifulSoup(response4.content, 'html.parser')
+episodeData4 = soup4.findAll('div', attrs={'class': 'list_item'})
+
+# Webscraping for Season 4
+for i in episodeData4:
+    # Webscraping the episode number and season number
+    season_episode = i.div.a.text.replace('\n', '')
+    seasonEpisodeNum.append(season_episode)
+    # print("Season and Episode Number:" + str(season_episode))
+    # Webscraping the episode title
+    episodeTitle = soup4.strong.extract()
+    name = episodeTitle.text.replace('\n', '')
+    episodeName.append(name)
+    # print("Episode Title: " + str(name))
+    # Webscraping the episode rating
+    rating = i.find('div', class_='ipl-rating-star small').text.replace('\n', '')
+    episodeRating.append(rating[:-7])
+    # print("Episode Rating: " + str(rating[:-7]))
+    # Webscraping the episode date
+    date = i.find('div', class_='airdate').text.replace(' ', '').replace('\n', '').replace('.', '')
+    episodeDate.append(date[-4:])
+    # print("Episode Date of Release: " + str(date[-4:]))
+    # pageLink = soup.strong.extract()
+    # if pageLink.has_attr('href'):
+    episodeLink = i.find('a').get('href')
+    urlOfEpisode = 'https://www.imdb.com' + str(episodeLink)
+    urlOfReview = str(urlOfEpisode) + "reviews?ref_=tt_ov_rt"
+    reviewLink.append(urlOfReview)
+    # print("Review Link: " + str(urlOfReview))
+
+
 # Building DataFrame
 print("\n\n")
 season_DF = pd.DataFrame(
@@ -365,17 +398,11 @@ print("\n\n")
 # Putting Datafram into data.csv file
 season_DF.to_csv('data.csv', sep='|', encoding='utf-8')
 
-# Creating the Model and Calculating Probabilities
-# wordList = []
-# wordList = positiveWords.extend(negativeWords)
 
-# print(FreqPositiveWords)
-# print(FreqNegativeWords)
-
-'''
 # Creating result.txt file
 resultFile = open("result.txt", "w")
 
+# making the isPostive list display positive or negative
 pos = 'positive'
 neg = 'negative'
 ratingPosNeg = []
@@ -385,11 +412,30 @@ for i in ratingReview:
     else:
         ratingPosNeg.append(neg)
 
+
 count2 = 1
 for i in titleReview:
+    #make the review name a list of words
+    reviewName = i.split()
+    print(reviewName)
+
+    countWords = 0
+    countWordsList = []
+    for j in reviewName:
+        for k in season4posList:
+            if j in k:
+                countWords += 1
+        #print(countWords)
+    countWordsList.append(countWords)
+    Sum = sum(countWordsList)
+    print(Sum)
+
+
     resultFile.write("No." + str(count2) + "  " + str(i) + "\n")
-    resultFile.write(" , " + " , " + " , " + str(ratingPosNeg) + " , " + "\n\n")
+    #resultFile.write(" , " + " , " + " , " + str(ratingPosNeg) + " , " + "\n\n")
     count2 += 1
-    
-'''
+
+print(len(season4posList))
+print(len(season4negList))
+
 print("\nProgram Terminated.\n")
