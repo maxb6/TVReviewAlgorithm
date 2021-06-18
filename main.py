@@ -643,4 +643,203 @@ plt.xlabel("Precision Values (%)")
 plt.ylabel("Smoothing Values")
 plt.show()
 
+
+########## TASK 2.3: WORD LENGTH FILTERING ################
+print("\nPerforming Task 2.3: Word Length Filtering ....\n")
+
+
+def computeFrequencyLength2(wordList):
+    wordList = str(wordList).split()
+    wordFreq = []
+    for w in wordList:
+        if len(w) <= 2:
+            wordList.remove(w)
+        else: 
+            wordFreq.append(wordList.count(w))
+
+    return dict(zip(wordList, wordFreq))
+
+def computeFrequencyLength4(wordList):
+    wordList = str(wordList).split()
+    wordFreq = []
+    for w in wordList:
+        if len(w) > 4:
+            wordFreq.append(wordList.count(w))
+        else: 
+            wordList.remove(w)
+
+
+    return dict(zip(wordList, wordFreq))
+
+def computeFrequencyLength9(wordList):
+    wordList = str(wordList).split()
+    wordFreq = []
+    for w in wordList:
+        if len(w) < 9:
+            wordFreq.append(wordList.count(w))
+        else: 
+            wordList.remove(w)
+
+    return dict(zip(wordList, wordFreq))
+
+def computeProbabilityLength(dictPos, dictNeg, smoothing):
+    count1 = 1
+    modelFile = open("length-model.txt", 'w')
+    posSize = len(dictPos)
+    negSize = len(dictNeg)
+
+    # print("POS SIZE: " + str(posSize))
+    # print("NEG SIZE: " + str(negSize))
+
+    for word in dictPos:
+        posFrequency = (dictPos[word]) + smoothing
+        posProbability = math.log10(posFrequency / posSize)
+        if word in dictNeg:
+            negFrequency = (dictNeg[word]) + smoothing
+        else:
+            negFrequency = smoothing
+        negProbability = math.log10(negFrequency / negSize)
+
+        modelFile.write(
+            "No." + str(count1) + "  " + str(word.replace('.', '').replace(',', '').replace('"', '')) + "\n")
+        modelFile.write(
+            str(str(posFrequency) + ", " + str(posProbability) + ", " + str(negFrequency) + ", " + str(
+                negProbability) + "\n\n"))
+        count1 += 1
+
+        # print("Word: ", word, " PosFreq: ", posFrequency, " NegFreq: ", negFrequency," PosProbability: ",
+        # posProbability," NEGProbability: ",negProbability)
+
+    for word in dictNeg:
+        negFrequency = (dictNeg[word]) + smoothing
+        negProbability = math.log10(negFrequency / negSize)
+        if word in dictPos:
+            posFrequency = (dictPos[word]) + smoothing
+        else:
+            posFrequency = smoothing
+        posProbability = math.log10(posFrequency / posSize)
+
+        modelFile.write(
+            "No." + str(count1) + "  " + str(word.replace('.', '').replace(',', '').replace('"', '')) + "\n")
+        modelFile.write(
+            str(str(posFrequency) + ", " + str(posProbability) + ", " + str(negFrequency) + ", " + str(
+                negProbability) + "\n\n"))
+        count1 += 1
+
+        # print("Word: ", word, " PosFreq: ", posFrequency, " NegFreq: ", negFrequency, " PosProbability: ",
+        # posProbability, " NEGProbability: ", negProbability)
+
+
+resultLengthFile = open("length-result.txt", "w")
+
+#Removing Lenth 2
+posDictLength2 = computeFrequencyLength2(season4posList)
+negDictLength2 = computeFrequencyLength2(season4negList)
+#computeProbabilityLength(posDictLength2, negDictLength2, 1)
+#Removing Lenth 4
+posDictLength4 = computeFrequencyLength4(season4posList)
+negDictLength4 = computeFrequencyLength4(season4negList)
+computeProbabilityLength(posDictLength4, negDictLength4, 1)
+#Removing Lenth 9
+posDictLength9 = computeFrequencyLength9(season4posList)
+negDictLength9 = computeFrequencyLength9(season4negList)
+#computeProbabilityLength(posDictLength9, negDictLength9, 1)
+
+totalWords = []
+def testReviewTitlesLength(smoothing):
+    count2 = 1
+
+    reviewDict = dict(zip(titleReview, ratingPosNeg))
+    # print(reviewDict)
+
+    correctnessCounter = 0
+
+    for reviewTitle in reviewDict:
+        # make the review name a list of words
+        reviewName = reviewTitle.lower().replace(".", " ").replace("(", " ").replace(")", " ").replace("?",
+                                                                                                       " ").replace(
+            "!",
+            " ").replace(
+            ":", " ").replace(";", " ").replace(",", " ").replace("\\", " ").replace("[", " ").replace("]",
+                                                                                                       " ").replace(
+            "[", " ").replace('"', ' ').replace('"]', ' ').replace("*", " ").replace("-", " ")
+        reviewName = reviewName.split()
+        # print(reviewName)
+
+        totalPosFrequency = 0
+        totalNegFrequency = 0
+        for word in reviewName:
+            if word in posDict:
+                posFrequency = posDict[word] + smoothing
+            else:
+                posFrequency = smoothing
+            if word in negDict:
+                negFrequency = negDict[word]
+            else:
+                negFrequency = smoothing
+
+            # print(word, "  Frequency in Pos: ", posFrequency, "  Frequency in Neg: ", negFrequency)
+
+            totalPosFrequency += posFrequency
+            totalNegFrequency += negFrequency
+
+        # print("TotalPosFrequency ", totalPosFrequency, " TotalNegFrequency ", totalNegFrequency)
+
+        posSize = len(posDict)
+        negSize = len(negDict)
+
+        posProbability = math.log10(totalPosFrequency / posSize)
+        negProbability = math.log10(totalNegFrequency / negSize)
+
+        actual = reviewDict[reviewTitle]
+
+        if posProbability > negProbability:
+            prediction = "Positive"
+        else:
+            prediction = "Negative"
+
+        if prediction == actual:
+            correctness = "Prediction was Right"
+            correctnessCounter += 1
+        else:
+            correctness = "Prediction was Wrong"
+
+        resultLengthFile.write("No." + str(count2) + "  " + str(reviewTitle) + "\n")
+        resultLengthFile.write(
+            str(posProbability) + " , " + str(
+                negProbability) + " , " + prediction + " , " + actual + " , " + correctness + "\n\n")
+        count2 += 1
+
+    totalWords.append(count2)
+    numReviews = len(reviewDict)
+    precision = (correctnessCounter / numReviews) * 100
+
+    resultLengthFile.write("Prediction Correctness is " + str(precision) + "%")
+    #print(totalWords)
+    return precision
+
+testReviewTitlesLength(1)
+totalWordsLeft = float(totalWords[0])
+
+
+
+# changing length value
+length2 = testReviewTitlesLength(1)
+length4 = testReviewTitlesLength(1)
+length9 = testReviewTitlesLength(1)
+
+# Matplotlib plotting
+
+lengthValues = 2, 4, 9
+precisionLengthValues = length2 / totalWordsLeft, length4 / totalWordsLeft, length9 / totalWordsLeft
+
+plt.scatter(precisionLengthValues, lengthValues)
+plt.title("Word Length Filtering")
+plt.xlabel("Precision Values (%)")
+plt.ylabel("Length Values")
+plt.show()
+
+
+
+
 print("\nProgram Terminated.\n")
