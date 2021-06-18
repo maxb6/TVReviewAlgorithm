@@ -619,7 +619,7 @@ def testReviewTitlesSmoothing(smoothing):
     return precision
 
 
-print("\nPerforming Task2.2: Word Smoothing Filtering ....\n")
+print("\nPerforming Task 2.2: Word Smoothing Filtering ....\n")
 
 # changing smoothing value
 precision12 = testReviewTitles(1.2)
