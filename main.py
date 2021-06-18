@@ -11,6 +11,7 @@ import string
 import re
 from bs4 import BeautifulSoup
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 class Episode:
@@ -486,10 +487,160 @@ def testReviewTitles(smoothing):
     precision = (correctnessCounter / numReviews) * 100
 
     resultFile.write("Prediction Correctness is " + str(precision) + "%")
+    return precision
 
 
 print("\nTesting Data...\n")
 
 testReviewTitles(1)
+
+
+########## TASK 2.2: WORD SMOOTHING FILTERING ################
+
+def computeProbabilitySmoothing(dictPos, dictNeg, smoothing):
+    count1 = 1
+    modelFile = open("smooth-model.txt", 'w')
+    posSize = len(dictPos)
+    negSize = len(dictNeg)
+
+    # print("POS SIZE: " + str(posSize))
+    # print("NEG SIZE: " + str(negSize))
+
+    for word in dictPos:
+        posFrequency = (dictPos[word]) + smoothing
+        posProbability = math.log10(posFrequency / posSize)
+        if word in dictNeg:
+            negFrequency = (dictNeg[word]) + smoothing
+        else:
+            negFrequency = smoothing
+        negProbability = math.log10(negFrequency / negSize)
+
+        modelFile.write(
+            "No." + str(count1) + "  " + str(word.replace('.', '').replace(',', '').replace('"', '')) + "\n")
+        modelFile.write(
+            str(str(posFrequency) + ", " + str(posProbability) + ", " + str(negFrequency) + ", " + str(
+                negProbability) + "\n\n"))
+        count1 += 1
+
+        # print("Word: ", word, " PosFreq: ", posFrequency, " NegFreq: ", negFrequency," PosProbability: ",
+        # posProbability," NEGProbability: ",negProbability)
+
+    for word in dictNeg:
+        negFrequency = (dictNeg[word]) + smoothing
+        negProbability = math.log10(negFrequency / negSize)
+        if word in dictPos:
+            posFrequency = (dictPos[word]) + smoothing
+        else:
+            posFrequency = smoothing
+        posProbability = math.log10(posFrequency / posSize)
+
+        modelFile.write(
+            "No." + str(count1) + "  " + str(word.replace('.', '').replace(',', '').replace('"', '')) + "\n")
+        modelFile.write(
+            str(str(posFrequency) + ", " + str(posProbability) + ", " + str(negFrequency) + ", " + str(
+                negProbability) + "\n\n"))
+        count1 += 1
+
+        # print("Word: ", word, " PosFreq: ", posFrequency, " NegFreq: ", negFrequency, " PosProbability: ",
+        # posProbability, " NEGProbability: ", negProbability)
+
+
+resultSmoothingFile = open("smooth-result.txt", "w")
+
+
+def testReviewTitlesSmoothing(smoothing):
+    count2 = 1
+
+    reviewDict = dict(zip(titleReview, ratingPosNeg))
+    # print(reviewDict)
+
+    correctnessCounter = 0
+
+    for reviewTitle in reviewDict:
+        # make the review name a list of words
+        reviewName = reviewTitle.lower().replace(".", " ").replace("(", " ").replace(")", " ").replace("?",
+                                                                                                       " ").replace(
+            "!",
+            " ").replace(
+            ":", " ").replace(";", " ").replace(",", " ").replace("\\", " ").replace("[", " ").replace("]",
+                                                                                                       " ").replace(
+            "[", " ").replace('"', ' ').replace('"]', ' ').replace("*", " ").replace("-", " ")
+        reviewName = reviewName.split()
+        # print(reviewName)
+
+        totalPosFrequency = 0
+        totalNegFrequency = 0
+        for word in reviewName:
+            if word in posDict:
+                posFrequency = posDict[word] + smoothing
+            else:
+                posFrequency = smoothing
+            if word in negDict:
+                negFrequency = negDict[word]
+            else:
+                negFrequency = smoothing
+
+            # print(word, "  Frequency in Pos: ", posFrequency, "  Frequency in Neg: ", negFrequency)
+
+            totalPosFrequency += posFrequency
+            totalNegFrequency += negFrequency
+
+        # print("TotalPosFrequency ", totalPosFrequency, " TotalNegFrequency ", totalNegFrequency)
+
+        posSize = len(posDict)
+        negSize = len(negDict)
+
+        posProbability = math.log10(totalPosFrequency / posSize)
+        negProbability = math.log10(totalNegFrequency / negSize)
+
+        actual = reviewDict[reviewTitle]
+
+        if posProbability > negProbability:
+            prediction = "Positive"
+        else:
+            prediction = "Negative"
+
+        if prediction == actual:
+            correctness = "Prediction was Right"
+            correctnessCounter += 1
+        else:
+            correctness = "Prediction was Wrong"
+
+        resultSmoothingFile.write("No." + str(count2) + "  " + str(reviewTitle) + "\n")
+        resultSmoothingFile.write(
+            str(posProbability) + " , " + str(
+                negProbability) + " , " + prediction + " , " + actual + " , " + correctness + "\n\n")
+        count2 += 1
+
+    numReviews = len(reviewDict)
+    precision = (correctnessCounter / numReviews) * 100
+
+    resultSmoothingFile.write("Prediction Correctness is " + str(precision) + "%")
+    return precision
+
+
+print("\nPerforming Task2.2: Word Smoothing Filtering ....\n")
+
+# changing smoothing value
+precision12 = testReviewTitles(1.2)
+precision14 = testReviewTitles(1.4)
+precision16 = testReviewTitlesSmoothing(1.6)
+precision18 = testReviewTitles(1.8)
+precision2 = testReviewTitles(2)
+precision1 = testReviewTitles(1)
+
+# Write results of 1.6
+computeProbabilitySmoothing(posDict, negDict, 1.6)
+
+# Matplotlib plotting
+
+smoothValues = 1, 1.2, 1.4, 1.6, 1.8, 2
+precisionValues = precision1, precision12, precision14, precision16, precision18, precision2
+
+plt.scatter(precisionValues, smoothValues)
+plt.title("Word Smoothing Filtering")
+plt.xlabel("Precision Values (%)")
+plt.ylabel("Smoothing Values")
+plt.show()
 
 print("\nProgram Terminated.\n")
