@@ -6,6 +6,7 @@
 from matplotlib.pyplot import cla
 import pandas as pd
 import requests
+import math
 import string
 import re
 from bs4 import BeautifulSoup
@@ -158,7 +159,7 @@ def computeFrequency(wordList):
     return dict(zip(wordList, wordFreq))
 
 
-def computeProbability(dictPos, dictNeg):
+def computeProbability(dictPos, dictNeg, smoothing):
     count1 = 1
     modelFile = open("model.txt", 'w')
     posSize = len(dictPos)
@@ -168,13 +169,13 @@ def computeProbability(dictPos, dictNeg):
     # print("NEG SIZE: " + str(negSize))
 
     for word in dictPos:
-        posFrequency = (dictPos[word]) + 1
-        posProbability = posFrequency / posSize
+        posFrequency = (dictPos[word]) + smoothing
+        posProbability = math.log10(posFrequency / posSize)
         if word in dictNeg:
-            negFrequency = (dictNeg[word]) + 1
+            negFrequency = (dictNeg[word]) + smoothing
         else:
-            negFrequency = 1
-        negProbability = negFrequency / negSize
+            negFrequency = smoothing
+        negProbability = math.log10(negFrequency / negSize)
 
         modelFile.write(
             "No." + str(count1) + "  " + str(word.replace('.', '').replace(',', '').replace('"', '')) + "\n")
@@ -187,13 +188,13 @@ def computeProbability(dictPos, dictNeg):
         # posProbability," NEGProbability: ",negProbability)
 
     for word in dictNeg:
-        negFrequency = (dictNeg[word]) + 1
-        negProbability = negFrequency / negSize
+        negFrequency = (dictNeg[word]) + smoothing
+        negProbability = math.log10(negFrequency / negSize)
         if word in dictPos:
-            posFrequency = (dictPos[word]) + 1
+            posFrequency = (dictPos[word]) + smoothing
         else:
-            posFrequency = 1
-        posProbability = posFrequency / posSize
+            posFrequency = smoothing
+        posProbability = math.log10(posFrequency / posSize)
 
         modelFile.write(
             "No." + str(count1) + "  " + str(word.replace('.', '').replace(',', '').replace('"', '')) + "\n")
@@ -213,6 +214,7 @@ print("\nProgram Start:\n")
 
 season1URL = 'https://www.imdb.com/title/tt0098904/episodes?season=1&ref_=ttep_ep_sn_pv'
 
+print("\nCalculating Season 1...\n")
 season1Lists = extractReviewData(season1URL, [], [])
 season1posList = season1Lists[0]
 season1negList = season1Lists[1]
@@ -220,6 +222,7 @@ season1negList = season1Lists[1]
 # print("Season 1:" + str(season1posList))
 # print("Season 1:" + str(season1negList))
 
+print("\nCalculating Season 2...\n")
 season2URL = 'https://www.imdb.com/title/tt0098904/episodes?season=2'
 
 season2Lists = extractReviewData(season2URL, season1posList, season1negList)
@@ -229,6 +232,7 @@ season2negList = season2Lists[1]
 # print("Season 2:" + str(season2posList))
 # print("Season 2:" + str(season2negList))
 
+print("\nCalculating Season 3...\n")
 season3URL = 'https://www.imdb.com/title/tt0098904/episodes?season=3'
 
 season3Lists = extractReviewData(season3URL, season2posList, season2negList)
@@ -238,6 +242,7 @@ season3negList = season3Lists[1]
 # print("Season 3:" + str(season3posList))
 # print("Season 3:" + str(season3negList))
 
+print("\nCalculating Season 4...\n")
 season4URL = 'https://www.imdb.com/title/tt0098904/episodes?season=4'
 
 season4Lists = extractReviewData(season4URL, season3posList, season3negList)
@@ -247,8 +252,10 @@ season4negList = season4Lists[1]
 # print("Season 4 POS:" + str(season4posList))
 # print("Season 4 NEG:" + str(season4negList))
 
-
-computeProbability(computeFrequency(season4posList), computeFrequency(season4negList))
+print("\nCalculating Probabilities...\n")
+posDict = computeFrequency(season4posList)
+negDict = computeFrequency(season4negList)
+computeProbability(posDict, negDict, 1)
 
 seasonEpisodeNum = []
 episodeName = []
@@ -387,7 +394,6 @@ for i in episodeData4:
     reviewLink.append(urlOfReview)
     # print("Review Link: " + str(urlOfReview))
 
-
 # Building DataFrame
 print("\n\n")
 season_DF = pd.DataFrame(
@@ -398,13 +404,12 @@ print("\n\n")
 # Putting Datafram into data.csv file
 season_DF.to_csv('data.csv', sep='|', encoding='utf-8')
 
-
 # Creating result.txt file
 resultFile = open("result.txt", "w")
 
 # making the isPostive list display positive or negative
-pos = 'positive'
-neg = 'negative'
+pos = 'Positive'
+neg = 'Negative'
 ratingPosNeg = []
 for i in ratingReview:
     if i == True:
@@ -413,29 +418,78 @@ for i in ratingReview:
         ratingPosNeg.append(neg)
 
 
-count2 = 1
-for i in titleReview:
-    #make the review name a list of words
-    reviewName = i.split()
-    print(reviewName)
+def testReviewTitles(smoothing):
+    count2 = 1
 
-    countWords = 0
-    countWordsList = []
-    for j in reviewName:
-        for k in season4posList:
-            if j in k:
-                countWords += 1
-        #print(countWords)
-    countWordsList.append(countWords)
-    Sum = sum(countWordsList)
-    print(Sum)
+    reviewDict = dict(zip(titleReview, ratingPosNeg))
+    # print(reviewDict)
+
+    correctnessCounter = 0
+
+    for reviewTitle in reviewDict:
+        # make the review name a list of words
+        reviewName = reviewTitle.lower().replace(".", " ").replace("(", " ").replace(")", " ").replace("?",
+                                                                                                       " ").replace(
+            "!",
+            " ").replace(
+            ":", " ").replace(";", " ").replace(",", " ").replace("\\", " ").replace("[", " ").replace("]",
+                                                                                                       " ").replace(
+            "[", " ").replace('"', ' ').replace('"]', ' ').replace("*", " ").replace("-", " ")
+        reviewName = reviewName.split()
+        # print(reviewName)
+
+        totalPosFrequency = 0
+        totalNegFrequency = 0
+        for word in reviewName:
+            if word in posDict:
+                posFrequency = posDict[word] + smoothing
+            else:
+                posFrequency = smoothing
+            if word in negDict:
+                negFrequency = negDict[word]
+            else:
+                negFrequency = smoothing
+
+            # print(word, "  Frequency in Pos: ", posFrequency, "  Frequency in Neg: ", negFrequency)
+
+            totalPosFrequency += posFrequency
+            totalNegFrequency += negFrequency
+
+        # print("TotalPosFrequency ", totalPosFrequency, " TotalNegFrequency ", totalNegFrequency)
+
+        posSize = len(posDict)
+        negSize = len(negDict)
+
+        posProbability = math.log10(totalPosFrequency / posSize)
+        negProbability = math.log10(totalNegFrequency / negSize)
+
+        actual = reviewDict[reviewTitle]
+
+        if posProbability > negProbability:
+            prediction = "Positive"
+        else:
+            prediction = "Negative"
+
+        if prediction == actual:
+            correctness = "Prediction was Right"
+            correctnessCounter += 1
+        else:
+            correctness = "Prediction was Wrong"
+
+        resultFile.write("No." + str(count2) + "  " + str(reviewTitle) + "\n")
+        resultFile.write(
+            str(posProbability) + " , " + str(
+                negProbability) + " , " + prediction + " , " + actual + " , " + correctness + "\n\n")
+        count2 += 1
+
+    numReviews = len(reviewDict)
+    precision = (correctnessCounter / numReviews) * 100
+
+    resultFile.write("Prediction Correctness is " + str(precision) + "%")
 
 
-    resultFile.write("No." + str(count2) + "  " + str(i) + "\n")
-    #resultFile.write(" , " + " , " + " , " + str(ratingPosNeg) + " , " + "\n\n")
-    count2 += 1
+print("\nTesting Data...\n")
 
-print(len(season4posList))
-print(len(season4negList))
+testReviewTitles(1)
 
 print("\nProgram Terminated.\n")
