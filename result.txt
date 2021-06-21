@@ -952,7 +952,9 @@ No.317   Who took the Raisins?
 No.318   Negative
 -3.458788881710845 , -2.86123561863404 , Negative , Positive , Prediction was Wrong
 
-Prediction Correctness is 65.09433962264151%No.1   Quite the stage setter.
+Prediction Correctness is 65.09433962264151%
+
+No.1   Quite the stage setter.
 -2.0713990553721153 , -2.0584618933420646 , Negative , Positive , Prediction was Wrong
 
 No.2   Not great by the show's standards, but still one hell of a pilot.
@@ -1906,7 +1908,9 @@ No.317   Who took the Raisins?
 No.318   Negative
 -3.41739619655262 , -2.86123561863404 , Negative , Positive , Prediction was Wrong
 
-Prediction Correctness is 62.893081761006286%No.1   Quite the stage setter.
+Prediction Correctness is 62.893081761006286%
+
+No.1   Quite the stage setter.
 -2.064337200884629 , -2.0516759039987726 , Negative , Positive , Prediction was Wrong
 
 No.2   Not great by the show's standards, but still one hell of a pilot.
@@ -2860,7 +2864,9 @@ No.317   Who took the Raisins?
 No.318   Negative
 -3.3796076356632203 , -2.86123561863404 , Negative , Positive , Prediction was Wrong
 
-Prediction Correctness is 62.264150943396224%No.1   Quite the stage setter.
+Prediction Correctness is 62.264150943396224%
+
+No.1   Quite the stage setter.
 -2.0505489163989954 , -2.0384139733309357 , Negative , Positive , Prediction was Wrong
 
 No.2   Not great by the show's standards, but still one hell of a pilot.
@@ -3814,7 +3820,9 @@ No.317   Who took the Raisins?
 No.318   Negative
 -3.312660846032607 , -2.86123561863404 , Negative , Positive , Prediction was Wrong
 
-Prediction Correctness is 61.0062893081761%No.1   Quite the stage setter.
+Prediction Correctness is 61.0062893081761%
+
+No.1   Quite the stage setter.
 -2.043815533740027 , -2.0319318458030153 , Negative , Positive , Prediction was Wrong
 
 No.2   Not great by the show's standards, but still one hell of a pilot.
@@ -4768,7 +4776,9 @@ No.317   Who took the Raisins?
 No.318   Negative
 -3.2826976226551636 , -2.86123561863404 , Negative , Positive , Prediction was Wrong
 
-Prediction Correctness is 61.0062893081761%No.1   Quite the stage setter.
+Prediction Correctness is 61.0062893081761%
+
+No.1   Quite the stage setter.
 -2.078577639999239 , -2.065355601289965 , Negative , Positive , Prediction was Wrong
 
 No.2   Not great by the show's standards, but still one hell of a pilot.
@@ -5723,3 +5733,4 @@ No.318   Negative
 -3.458788881710845 , -2.86123561863404 , Negative , Positive , Prediction was Wrong
 
 Prediction Correctness is 65.09433962264151%
+
