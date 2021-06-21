@@ -1,955 +1,955 @@
 No.1   Quite the stage setter.
--2.057388340929301 , -2.044994318642257 , Negative , Positive , Prediction was Wrong
+-2.057388340929301 , -2.044844845406604 , Negative , Positive , Prediction was Wrong
 
 No.2   Not great by the show's standards, but still one hell of a pilot.
--1.0086938058392427 , -1.2400593368590052 , Positive , Positive , Prediction was Right
+-1.0086938058392427 , -1.2399098636233519 , Positive , Positive , Prediction was Right
 
 No.3   A very good first episode
--0.953638903390939 , -1.015827479012247 , Positive , Positive , Prediction was Right
+-0.953638903390939 , -1.0156780057765937 , Positive , Positive , Prediction was Right
 
 No.4   Let the fun begin!
--2.1754876530072953 , -2.3297567015917853 , Positive , Positive , Prediction was Right
+-2.1754876530072953 , -2.329607228356132 , Positive , Positive , Prediction was Right
 
 No.5   Surprisingly poor start to television's greatest show
--1.4455302164273285 , -1.4187558495695918 , Negative , Negative , Prediction was Right
+-1.4455302164273285 , -1.4186063763339387 , Negative , Negative , Prediction was Right
 
 No.6   Hilarious, but
--1.8610936957853328 , -2.9069931091947154 , Positive , Positive , Prediction was Right
+-1.8610936957853328 , -2.906843635959062 , Positive , Positive , Prediction was Right
 
 No.7   First Seinfeld Experience... somewhat solid
--1.2120441719870036 , -1.339443968994917 , Positive , Negative , Prediction was Wrong
+-1.2120441719870036 , -1.3392944957592638 , Positive , Negative , Prediction was Wrong
 
 No.8   And that's the end of that story
--1.4413381522003088 , -1.547368398264887 , Positive , Positive , Prediction was Right
+-1.4413381522003088 , -1.5472189250292336 , Positive , Positive , Prediction was Right
 
 No.9   Distinctly, the first episode
--0.9983420978301245 , -1.0827226068951155 , Positive , Negative , Prediction was Wrong
+-0.9983420978301245 , -1.0825731336594624 , Positive , Negative , Prediction was Wrong
 
 No.10   Seems fun
--2.23868079367079 , -2.232846688583729 , Negative , Positive , Prediction was Wrong
+-2.23868079367079 , -2.2326972153480757 , Negative , Positive , Prediction was Wrong
 
 No.11   Educational and Relatable
--2.6199397909735898 , -2.8400463195641024 , Positive , Negative , Prediction was Wrong
+-2.6199397909735898 , -2.839896846328449 , Positive , Negative , Prediction was Wrong
 
 No.12   That wasn't in the manual...
--2.8567288903828825 , -2.560205622970059 , Negative , Negative , Prediction was Right
+-2.8567288903828825 , -2.560056149734406 , Negative , Negative , Prediction was Right
 
 No.13   Does not accurately represent Seinfeld and its legacy but is still an interesting retrospective viewing experience
--1.2511545143218834 , -1.3567647561396214 , Positive , Negative , Prediction was Wrong
+-1.2511545143218834 , -1.3566152829039684 , Positive , Negative , Prediction was Wrong
 
 No.14   Funny, witty and so much ahead of its time
--1.2792370905456574 , -1.3447002447382408 , Positive , Positive , Prediction was Right
+-1.2792370905456574 , -1.3445507715025877 , Positive , Positive , Prediction was Right
 
 No.15   Worst episode of television I've ever watched
--1.0138077696229002 , -1.0929676021824923 , Positive , Negative , Prediction was Wrong
+-1.0138077696229002 , -1.092818128946839 , Positive , Negative , Prediction was Wrong
 
 No.16   The start of it all
--2.1365695869769255 , -2.3698739247997676 , Positive , Positive , Prediction was Right
+-2.1365695869769255 , -2.3697244515641147 , Positive , Positive , Prediction was Right
 
 No.17   "Art Core... velay"
--2.485661028111146 , -2.800537778280429 , Positive , Positive , Prediction was Right
+-2.485661028111146 , -2.8003883050447755 , Positive , Positive , Prediction was Right
 
 No.18   What's wrong with Lonnie Anderson?
--2.078577639999239 , -2.3560856403141344 , Positive , Positive , Prediction was Right
+-2.078577639999239 , -2.355936167078481 , Positive , Positive , Prediction was Right
 
 No.19   This episode feels closer to a "Seinfeld" episode than its predecessor
--0.6940151647998046 , -0.7617276249060754 , Positive , Negative , Prediction was Wrong
+-0.6940151647998046 , -0.7615781516704221 , Positive , Negative , Prediction was Wrong
 
 No.20   more quotes from that episode
--1.0822119246543331 , -1.160531901489021 , Positive , Positive , Prediction was Right
+-1.0822119246543331 , -1.160382428253368 , Positive , Positive , Prediction was Right
 
 No.21   Excellent episode; sets the stage for the whole series, gives the audience something to think about
--0.8855690545964229 , -0.96004983849689 , Positive , Positive , Prediction was Right
+-0.8855690545964229 , -0.9599003652612368 , Positive , Positive , Prediction was Right
 
 No.22   Reveals The Grail of the Series
--1.7748417509593328 , -1.878964385594472 , Positive , Positive , Prediction was Right
+-1.7748417509593328 , -1.8788149123588187 , Positive , Positive , Prediction was Right
 
 No.23   Lovby
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.24   Brilliant, just brilliant!
--2.128375108361654 , -2.4810243769224343 , Positive , Positive , Prediction was Right
+-2.128375108361654 , -2.480874903686781 , Positive , Positive , Prediction was Right
 
 No.25   Best episode of the season
--0.8941228174587557 , -1.023647180398529 , Positive , Positive , Prediction was Right
+-0.8941228174587557 , -1.023497707162876 , Positive , Positive , Prediction was Right
 
 No.26   What's The Rent?
--2.7685928016823316 , -2.7472922663272037 , Negative , Positive , Prediction was Wrong
+-2.7685928016823316 , -2.7471427930915504 , Negative , Positive , Prediction was Wrong
 
 No.27   That Kramer.
--1.3478626394444246 , -1.7028731265387906 , Positive , Positive , Prediction was Right
+-1.3478626394444246 , -1.7027236533031376 , Positive , Positive , Prediction was Right
 
 No.28   "The Stakeout" got George just right in his one brief scene and this episode manages to get Kramer just right with his one scene
--0.42128270401916723 , -0.6510509131616334 , Positive , Negative , Prediction was Wrong
+-0.42128270401916723 , -0.6509014399259803 , Positive , Negative , Prediction was Wrong
 
 No.29   Sweet episode
--1.0949889362317355 , -1.1697120964658858 , Positive , Positive , Prediction was Right
+-1.0949889362317355 , -1.1695626232302327 , Positive , Positive , Prediction was Right
 
 No.30   Stuff
--2.879005285094035 , -2.98617435524234 , Positive , Positive , Prediction was Right
+-2.879005285094035 , -2.9860248820066873 , Positive , Positive , Prediction was Right
 
 No.31   Thought-Provoking Commentary
--2.300426389615595 , -2.4379897446972323 , Positive , Negative , Prediction was Wrong
+-2.300426389615595 , -2.4378402714615794 , Positive , Negative , Prediction was Wrong
 
 No.32   Almost painful to watch
--1.9247627756547099 , -2.022386527896785 , Positive , Negative , Prediction was Wrong
+-1.9247627756547099 , -2.0222370546611317 , Positive , Negative , Prediction was Wrong
 
 No.33   The one with no "The" at the beginning...
--1.2645521329870155 , -1.5014001362941525 , Positive , Positive , Prediction was Right
+-1.2645521329870155 , -1.5012506630584994 , Positive , Positive , Prediction was Right
 
 No.34   "I don't think we're right for each other"
--1.7312476246822885 , -1.8835120133451926 , Positive , Positive , Prediction was Right
+-1.7312476246822885 , -1.8833625401095393 , Positive , Positive , Prediction was Right
 
 No.35   In this, the only Seinfeld episode whose title does not begin with the word 'The', Kramer conceives the idea of a bake-your-own-pie pizza shop
--0.7360727142223503 , -0.8819149212520156 , Positive , Negative , Prediction was Wrong
+-0.7360727142223503 , -0.8817654480163625 , Positive , Negative , Prediction was Wrong
 
 No.36   Ha
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.37   Immersive
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.38   Heteronormativity, sexism and gender norms
--2.8567288903828825 , -2.6307866972557665 , Negative , Negative , Prediction was Right
+-2.8567288903828825 , -2.6306372240201132 , Negative , Negative , Prediction was Right
 
 No.39   Alongside the pilot, this is actually my least favourite episode of the first season
--0.8241101295321627 , -0.9227158934575485 , Positive , Negative , Prediction was Wrong
+-0.8241101295321627 , -0.9225664202218953 , Positive , Negative , Prediction was Wrong
 
 No.40   Season 1 finale: excellent!
--1.4265731784128635 , -1.663955060508421 , Positive , Positive , Prediction was Right
+-1.4265731784128635 , -1.663805587272768 , Positive , Positive , Prediction was Right
 
 No.41   The Stock Is Down Again?
--2.50454637227152 , -2.336190811597195 , Negative , Positive , Prediction was Wrong
+-2.50454637227152 , -2.3360413383615417 , Negative , Positive , Prediction was Wrong
 
 No.42   Woh
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.43   Uncanny Valley Realism
--2.8153362052246576 , -2.549481757578286 , Negative , Negative , Prediction was Right
+-2.8153362052246576 , -2.5493322843426327 , Negative , Negative , Prediction was Right
 
 No.44   This is more like the Seinfeld I know and love
--1.1037206753619941 , -1.211414155409475 , Positive , Positive , Prediction was Right
+-1.1037206753619941 , -1.211264682173822 , Positive , Positive , Prediction was Right
 
 No.45   "One motion: right off!"
--1.227829325962276 , -1.5227791250294356 , Positive , Positive , Prediction was Right
+-1.227829325962276 , -1.5226296517937823 , Positive , Positive , Prediction was Right
 
 No.46   A splendid start for Seinfeld's second season!
--1.3329824235713181 , -1.4685386653743746 , Positive , Positive , Prediction was Right
+-1.3329824235713181 , -1.4683891921387215 , Positive , Positive , Prediction was Right
 
 No.47   "You are a cashier." was so sad
--2.639244946168976 , -2.414077587291821 , Negative , Negative , Prediction was Right
+-2.639244946168976 , -2.413928114056168 , Negative , Negative , Prediction was Right
 
 No.48   Oh oh
--2.0678537746074657 , -2.6851443595783593 , Positive , Positive , Prediction was Right
+-2.0678537746074657 , -2.684994886342706 , Positive , Positive , Prediction was Right
 
 No.49   Nobody likes a kid with a pony
--2.213276213896695 , -2.3234165235607662 , Positive , Positive , Prediction was Right
+-2.213276213896695 , -2.323267050325113 , Positive , Positive , Prediction was Right
 
 No.50   Best achievement of the second season!
--1.2593079668484892 , -1.4470982564495636 , Positive , Positive , Prediction was Right
+-1.2593079668484892 , -1.4469487832139105 , Positive , Positive , Prediction was Right
 
 No.51   I appreciate the status of this one as a mild classic of early Seinfeld but I far prefer the season premiere
--0.8478095017878476 , -0.9961316439929125 , Positive , Negative , Prediction was Wrong
+-0.8478095017878476 , -0.9959821707572593 , Positive , Negative , Prediction was Wrong
 
 No.52   Bread
--3.344845529404008 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.344845529404008 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.53   "Pipe down, chorus boy!"
--2.249273867168214 , -2.5712010072715223 , Positive , Positive , Prediction was Right
+-2.249273867168214 , -2.571051534035869 , Positive , Positive , Prediction was Right
 
 No.54   One of the really great early Seinfeld episodes...
--0.8249166190525121 , -0.941895981846627 , Positive , Positive , Prediction was Right
+-0.8249166190525121 , -0.9417465086109739 , Positive , Positive , Prediction was Right
 
 No.55   My Favorite Episode
--1.0796647356404532 , -1.156656168937741 , Positive , Positive , Prediction was Right
+-1.0796647356404532 , -1.156506695702088 , Positive , Positive , Prediction was Right
 
 No.56   "We had a funny guy with us in Korea. A tail gunner. They blew his brains out all over the Pacific. There's nothing funny about that"
--1.1474589294070519 , -1.175493880031777 , Positive , Negative , Prediction was Wrong
+-1.1474589294070519 , -1.1753444067961236 , Positive , Negative , Prediction was Wrong
 
 No.57   There's nothing funny about that.
--1.4213623837702214 , -1.4331008246052515 , Positive , Positive , Prediction was Right
+-1.4213623837702214 , -1.4329513513695984 , Positive , Positive , Prediction was Right
 
 No.58   Suede
--3.344845529404008 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.344845529404008 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.59   "The idiot's on!"
--3.078577639999239 , -2.7820543725864155 , Negative , Positive , Prediction was Wrong
+-3.078577639999239 , -2.7819048993507622 , Negative , Positive , Prediction was Wrong
 
 No.60   "Take it easy"
--2.098953399370957 , -2.398837620735084 , Positive , Positive , Prediction was Right
+-2.098953399370957 , -2.3986881474994313 , Positive , Positive , Prediction was Right
 
 No.61   "i dont like cofee"
--1.634663047794296 , -1.6557605818931493 , Positive , Positive , Prediction was Right
+-1.634663047794296 , -1.6556111086574963 , Positive , Positive , Prediction was Right
 
 No.62   Beep
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.63   The perfect early 'Seinfeld' portrayal of George Costanza, he singlehandedly elevates this episode
--0.7449624573303203 , -0.894390194979124 , Positive , Negative , Prediction was Wrong
+-0.7449624573303203 , -0.8942407217434708 , Positive , Negative , Prediction was Wrong
 
 No.64   "You have no idea what an idiot is"
--2.0371849548410137 , -2.097807625071103 , Positive , Positive , Prediction was Right
+-2.0371849548410137 , -2.0976581518354496 , Positive , Positive , Prediction was Right
 
 No.65   "But I need the home-bed advantage"
--2.225792771318691 , -2.3171675742837645 , Positive , Positive , Prediction was Right
+-2.225792771318691 , -2.3170181010481117 , Positive , Positive , Prediction was Right
 
 No.66   Ring
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.67   Officer Kramer
--1.3478626394444246 , -1.7074207542895112 , Positive , Positive , Prediction was Right
+-1.3478626394444246 , -1.7072712810538582 , Positive , Positive , Prediction was Right
 
 No.68   With the exception of one of Kramer's defining moments in the series, I find "The Statue" to be rather un-Seinfeldian in its humour. It doesn't quite work for me
--0.9462378888066338 , -1.081639127376216 , Positive , Negative , Prediction was Wrong
+-0.9462378888066338 , -1.0814896541405628 , Positive , Negative , Prediction was Wrong
 
 No.69   There are degrees of coincidence.
--2.8567288903828825 , -2.560205622970059 , Negative , Positive , Prediction was Wrong
+-2.8567288903828825 , -2.560056149734406 , Negative , Positive , Prediction was Wrong
 
 No.70   Not the best
--1.7036766153157739 , -2.028726705927804 , Positive , Negative , Prediction was Wrong
+-1.7036766153157739 , -2.0285772326921507 , Positive , Negative , Prediction was Wrong
 
 No.71   Agree with the poster regarding Rava's accent
--2.3943308924839264 , -2.2128756076531086 , Negative , Negative , Prediction was Right
+-2.3943308924839264 , -2.2127261344174554 , Negative , Negative , Prediction was Right
 
 No.72   Sloppy acting
--2.673459046700078 , -2.98617435524234 , Positive , Negative , Prediction was Wrong
+-2.673459046700078 , -2.9860248820066873 , Positive , Negative , Prediction was Wrong
 
 No.73   Classic
--1.9702381652104006 , -2.3493522576551658 , Positive , Positive , Prediction was Right
+-1.9702381652104006 , -2.349202784419513 , Positive , Positive , Prediction was Right
 
 No.74   David + Alexander = Costanza!
--1.666397192212591 , -1.9691410159435598 , Positive , Positive , Prediction was Right
+-1.666397192212591 , -1.9689915427079068 , Positive , Positive , Prediction was Right
 
 No.75   The best episode yet, unlike the previous episode this one really feels like a 'Seinfeld' episode
--0.43644300544096487 , -0.5098258667086014 , Positive , Positive , Prediction was Right
+-0.43644300544096487 , -0.5096763934729482 , Positive , Positive , Prediction was Right
 
 No.76   Mickey
--3.344845529404008 , -3.4632956099620027 , Positive , Positive , Prediction was Right
+-3.344845529404008 , -3.4631461367263494 , Positive , Positive , Prediction was Right
 
 No.77   One of the best of season 2.
--0.9888196722108854 , -1.2463384026009057 , Positive , Positive , Prediction was Right
+-0.9888196722108854 , -1.2461889293652526 , Positive , Positive , Prediction was Right
 
 No.78   "I think I'm having a heart attack!"
--1.7255916166042755 , -1.7325133342956136 , Positive , Positive , Prediction was Right
+-1.7255916166042755 , -1.7323638610599603 , Positive , Positive , Prediction was Right
 
 No.79   "My name is Bob!"
--2.2628892293016114 , -2.391413602655877 , Positive , Positive , Prediction was Right
+-2.2628892293016114 , -2.3912641294202244 , Positive , Positive , Prediction was Right
 
 No.80   "There's Nothing Funny About That!"
--1.4213623837702214 , -1.4331008246052515 , Positive , Negative , Prediction was Wrong
+-1.4213623837702214 , -1.4329513513695984 , Positive , Negative , Prediction was Wrong
 
 No.81   Larry David :)
--1.6553317660624312 , -1.9581456316420969 , Positive , Positive , Prediction was Right
+-1.6553317660624312 , -1.9579961584064436 , Positive , Positive , Prediction was Right
 
 No.82   A disappointment for me personally, especially after "The Revenge" which almost indicated that 'Seinfeld' was finally figuring itself out
--1.5711715813751088 , -1.4819301008834584 , Negative , Negative , Prediction was Right
+-1.5711715813751088 , -1.4817806276478052 , Negative , Negative , Prediction was Right
 
 No.83   He
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.84   "This" is very good
--1.9311589808395064 , -1.8120175959638587 , Negative , Positive , Prediction was Wrong
+-1.9311589808395064 , -1.8118681227282056 , Negative , Positive , Prediction was Wrong
 
 No.85   "No. You see? You got greedy"
--1.65738517169349 , -1.8677993881364285 , Positive , Positive , Prediction was Right
+-1.65738517169349 , -1.8676499149007755 , Positive , Positive , Prediction was Right
 
 No.86   George
--1.1197351460017058 , -1.4421063108920646 , Positive , Positive , Prediction was Right
+-1.1197351460017058 , -1.4419568376564116 , Positive , Positive , Prediction was Right
 
 No.87   I hate when Jerry and Elaine get together
--0.820399474045509 , -1.1192965409048414 , Positive , Negative , Prediction was Wrong
+-0.820399474045509 , -1.1191470676691881 , Positive , Negative , Prediction was Wrong
 
 No.88   Elements of what make 'Seinfeld' great in the future are present here, but I don't think they come together well here
--1.1128273398977038 , -1.2237458891215298 , Positive , Negative , Prediction was Wrong
+-1.1128273398977038 , -1.2235964158858765 , Positive , Negative , Prediction was Wrong
 
 No.89   One of the first real gems in the series
--1.0319524279073369 , -1.2008445202315734 , Positive , Positive , Prediction was Right
+-1.0319524279073369 , -1.2006950469959201 , Positive , Positive , Prediction was Right
 
 No.90   Jerry the cable guy
--1.042647850542516 , -1.3965970595390074 , Positive , Positive , Prediction was Right
+-1.042647850542516 , -1.3964475863033543 , Positive , Positive , Prediction was Right
 
 No.91   Yeah
--2.5397107893347712 , -2.86123561863404 , Positive , Positive , Prediction was Right
+-2.5397107893347712 , -2.861086145398387 , Positive , Positive , Prediction was Right
 
 No.92   A real-time treat
--1.6032697260430449 , -1.6108156163251464 , Positive , Positive , Prediction was Right
+-1.6032697260430449 , -1.6106661430894933 , Positive , Positive , Prediction was Right
 
 No.93   "Where I am?!"
--3.078577639999239 , -2.7820543725864155 , Negative , Positive , Prediction was Wrong
+-3.078577639999239 , -2.7819048993507622 , Negative , Positive , Prediction was Wrong
 
 No.94   The best episode yet, a huge landmark of both television and the series, and definitely an early classic even if it may not hold up as well as later 'Seinfeld'.
--0.6976130685551135 , -0.8133768912265834 , Positive , Positive , Prediction was Right
+-0.6976130685551135 , -0.8132274179909302 , Positive , Positive , Prediction was Right
 
 No.95   Table Waiting Anarchy
--2.3316840833460373 , -2.2431875219219477 , Negative , Positive , Prediction was Wrong
+-2.3316840833460373 , -2.2430380486862944 , Negative , Positive , Prediction was Wrong
 
 No.96   Gang, I feel your pain.
--2.168754270348327 , -2.145232274999241 , Negative , Positive , Prediction was Wrong
+-2.168754270348327 , -2.145082801763588 , Negative , Positive , Prediction was Wrong
 
 No.97   Not nearly a great show
--1.3398631288850684 , -1.3486846257298297 , Positive , Negative , Prediction was Wrong
+-1.3398631288850684 , -1.3485351524941764 , Positive , Negative , Prediction was Wrong
 
 No.98   Next
--2.4903059331569097 , -2.6181975699477458 , Positive , Positive , Prediction was Right
+-2.4903059331569097 , -2.6180480967120925 , Positive , Positive , Prediction was Right
 
 No.99   It's alright
--2.9674271878765723 , -2.958145631642097 , Negative , Negative , Prediction was Right
+-2.9674271878765723 , -2.9579961584064436 , Negative , Negative , Prediction was Right
 
 No.100   THE Elaine episode of Season 2
--0.8096488175666261 , -0.9538242578594541 , Positive , Positive , Prediction was Right
+-0.8096488175666261 , -0.953674784623801 , Positive , Positive , Prediction was Right
 
 No.101   The busboy's coming
--2.5611617904204036 , -2.5824820176812113 , Positive , Negative , Prediction was Wrong
+-2.5611617904204036 , -2.582332544445558 , Positive , Negative , Prediction was Wrong
 
 No.102   George's unintentionally harmful remark gets a busboy fired and Elaine dates a guy she hates for no good reason
--1.038502996768927 , -1.2080231048586967 , Positive , Negative , Prediction was Wrong
+-1.038502996768927 , -1.2078736316230436 , Positive , Negative , Prediction was Wrong
 
 No.103   Fire
--2.879005285094035 , -3.259175627306078 , Positive , Positive , Prediction was Right
+-2.879005285094035 , -3.259026154070425 , Positive , Positive , Prediction was Right
 
 No.104   "I think it moved."
--2.102763024517722 , -2.0618950691804585 , Negative , Positive , Prediction was Wrong
+-2.102763024517722 , -2.061745595944805 , Negative , Positive , Prediction was Wrong
 
 No.105   This season three premiere immediately puts the series into a higher gear. This is more like the 'Seinfeld' I know and love!
--0.9888196722108853 , -1.091858292557902 , Positive , Positive , Prediction was Right
+-0.9888196722108853 , -1.0917088193222488 , Positive , Positive , Prediction was Right
 
 No.106   Season 3 Kicks Off in high gear!
--1.4476415209350475 , -1.6219361395071477 , Positive , Negative , Prediction was Wrong
+-1.4476415209350475 , -1.6217866662714946 , Positive , Negative , Prediction was Wrong
 
 No.107   Getting it right
--1.874457657343314 , -2.2431875219219477 , Positive , Positive , Prediction was Right
+-1.874457657343314 , -2.2430380486862944 , Positive , Positive , Prediction was Right
 
 No.108   It moved
--2.9674271878765723 , -3.048322261991185 , Positive , Positive , Prediction was Right
+-2.9674271878765723 , -3.0481727887555317 , Positive , Positive , Prediction was Right
 
 No.109   Still wallowing at this early stage
--1.765941962433615 , -1.7930497568878787 , Positive , Negative , Prediction was Wrong
+-1.765941962433615 , -1.7929002836522254 , Positive , Negative , Prediction was Wrong
 
 No.110   "Pity is very underrated"
--2.6327140790100185 , -2.6571156359781156 , Positive , Positive , Prediction was Right
+-2.6327140790100185 , -2.6569661627424623 , Positive , Positive , Prediction was Right
 
 No.111   "I saw her naked"
--2.4095708590406635 , -2.6998676163990654 , Positive , Positive , Prediction was Right
+-2.4095708590406635 , -2.699718143163412 , Positive , Positive , Prediction was Right
 
 No.112   Pappy eh mash eh, eh?
--2.8055763679355015 , -2.560205622970059 , Negative , Negative , Prediction was Right
+-2.8055763679355015 , -2.560056149734406 , Negative , Negative , Prediction was Right
 
 No.113   George Costanza is the highlight in this tightly plotted and highly entertaining early season three episode
--0.6800589577147329 , -0.8481876225188087 , Positive , Positive , Prediction was Right
+-0.6800589577147329 , -0.8480381492831556 , Positive , Positive , Prediction was Right
 
 No.114   Good
--1.9632445441643964 , -1.8612356186340404 , Negative , Positive , Prediction was Wrong
+-1.9632445441643964 , -1.8610861453983871 , Negative , Positive , Prediction was Wrong
 
 No.115   Pure, irresistible nonsense
--2.7263951218878764 , -2.9069931091947154 , Positive , Positive , Prediction was Right
+-2.7263951218878764 , -2.906843635959062 , Positive , Positive , Prediction was Right
 
 No.116   The show's only episode without both Kramer and George is still an early classic, courtesy of Larry David's fantastic script
--0.5791196760787917 , -0.7910129851730822 , Positive , Positive , Prediction was Right
+-0.5791196760787917 , -0.790863511937429 , Positive , Positive , Prediction was Right
 
 No.117   A Trip to Some Stifleing Paradise
--2.2601317947564223 , -2.317167574283765 , Positive , Negative , Prediction was Wrong
+-2.2601317947564223 , -2.3170181010481117 , Positive , Negative , Prediction was Wrong
 
 No.118   Pen
--2.595466021590389 , -3.4632956099620027 , Positive , Positive , Prediction was Right
+-2.595466021590389 , -3.4631461367263494 , Positive , Positive , Prediction was Right
 
 No.119   This episode founded the classic Seinfeld fictitious film, 'Prognosis Negative' and for that alone it's worth it. Even beyond that, I find this episode gets a bad rep.
--0.5881509185000393 , -0.6623037487018312 , Positive , Negative , Prediction was Wrong
+-0.5881509185000393 , -0.662154275466178 , Positive , Negative , Prediction was Wrong
 
 No.120   Weakest episode of the series, but it has redeeming qualities
--1.0108560161186646 , -1.0776893363636906 , Positive , Negative , Prediction was Wrong
+-1.0108560161186646 , -1.0775398631280375 , Positive , Negative , Prediction was Wrong
 
 No.121   Brilliant
--2.445951657005673 , -2.86123561863404 , Positive , Positive , Prediction was Right
+-2.445951657005673 , -2.861086145398387 , Positive , Positive , Prediction was Right
 
 No.122   In-Jokes Run Leashless
--2.3220683145544383 , -2.3110072655789464 , Negative , Negative , Prediction was Right
+-2.3220683145544383 , -2.310857792343293 , Negative , Negative , Prediction was Right
 
 No.123   Ruff
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.124   "Bad year for libraries..."
--2.066091928451179 , -1.9775741834804228 , Negative , Positive , Prediction was Wrong
+-2.066091928451179 , -1.9774247102447695 , Negative , Positive , Prediction was Wrong
 
 No.125   Kan't-STANz'yaa!!!
--3.2546688990549204 , -2.958145631642097 , Negative , Negative , Prediction was Right
+-3.2546688990549204 , -2.9579961584064436 , Negative , Negative , Prediction was Right
 
 No.126   You better not screw up again Seinfeld
--1.3546433311568369 , -1.4258691120213791 , Positive , Positive , Prediction was Right
+-1.3546433311568369 , -1.4257196387857258 , Positive , Positive , Prediction was Right
 
 No.127   So funny !
--1.6692081695464196 , -1.7591450931222037 , Positive , Positive , Prediction was Right
+-1.6692081695464196 , -1.7589956198865504 , Positive , Positive , Prediction was Right
 
 No.128   Best Episode
--1.0045539859625794 , -1.1228514951218844 , Positive , Positive , Prediction was Right
+-1.0045539859625794 , -1.1227020218862311 , Positive , Positive , Prediction was Right
 
 No.129   The episode that introduces Bookman and the iconic Seinfeld phrase, "Cantstandya" into the show's lexicon
--0.882447531505052 , -0.9884967911613715 , Positive , Positive , Prediction was Right
+-0.882447531505052 , -0.9883473179257182 , Positive , Positive , Prediction was Right
 
 No.130   Pun
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.131   Probably my favorite Season 3 episode!
--0.9294868839228644 , -1.0407057701105205 , Positive , Positive , Prediction was Right
+-0.9294868839228644 , -1.0405562968748674 , Positive , Positive , Prediction was Right
 
 No.132   One of the best episodes of the show!
--0.937781629302241 , -1.0698959146689009 , Positive , Positive , Prediction was Right
+-0.937781629302241 , -1.0697464414332478 , Positive , Positive , Prediction was Right
 
 No.133   "We're like rats in some experiment'
--1.5966575023978078 , -1.6320659160949396 , Positive , Positive , Prediction was Right
+-1.5966575023978078 , -1.6319164428592863 , Positive , Positive , Prediction was Right
 
 No.134   "Everything looks the same!"
--2.1223291478623154 , -2.116942635511364 , Negative , Negative , Prediction was Right
+-2.1223291478623154 , -2.116793162275711 , Negative , Negative , Prediction was Right
 
 No.135   Top 10 episode of Seinfeld ever
--0.8838321059463382 , -1.0045067282511577 , Positive , Positive , Prediction was Right
+-0.8838321059463382 , -1.0043572550155044 , Positive , Positive , Prediction was Right
 
 No.136   Fish
--3.344845529404008 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.344845529404008 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.137   Lost and Micturition.
--2.485661028111146 , -2.8400463195641024 , Positive , Negative , Prediction was Wrong
+-2.485661028111146 , -2.839896846328449 , Positive , Negative , Prediction was Wrong
 
 No.138   Real deep and meaningful piece of media
--1.9948958927249376 , -1.8505117532422672 , Negative , Positive , Prediction was Wrong
+-1.9948958927249376 , -1.850362280006614 , Negative , Positive , Prediction was Wrong
 
 No.139   The way in which George lies to his girlfriend is in my opinion the stand out of this overall excellent episode
--0.7130896551083392 , -0.8653811387594745 , Positive , Positive , Prediction was Right
+-0.7130896551083392 , -0.8652316655238214 , Positive , Positive , Prediction was Right
 
 No.140   "You're a bad man!"
--2.3724290510360966 , -2.0516759039987726 , Negative , Positive , Prediction was Wrong
+-2.3724290510360966 , -2.0515264307631194 , Negative , Positive , Prediction was Wrong
 
 No.141   Babu Bhatt.
--2.309569769055465 , -2.958145631642097 , Positive , Positive , Prediction was Right
+-2.309569769055465 , -2.9579961584064436 , Positive , Positive , Prediction was Right
 
 No.142   Yum
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.143   Excellent
--2.425365126223895 , -2.98617435524234 , Positive , Positive , Prediction was Right
+-2.425365126223895 , -2.9860248820066873 , Positive , Positive , Prediction was Right
 
 No.144   "I don't know, who keeps track of hellos?"
--1.806542540707522 , -1.8612356186340404 , Positive , Positive , Prediction was Right
+-1.806542540707522 , -1.8610861453983871 , Positive , Positive , Prediction was Right
 
 No.145   George and Elaine reach new levels of awesomeness!
--0.8948334167150321 , -1.2060971838226582 , Positive , Negative , Prediction was Wrong
+-0.8948334167150321 , -1.2059477105870051 , Positive , Negative , Prediction was Wrong
 
 No.146   Sexy
--3.344845529404008 , -3.4632956099620027 , Positive , Positive , Prediction was Right
+-3.344845529404008 , -3.4631461367263494 , Positive , Positive , Prediction was Right
 
 No.147   "You got butchered!"
--2.045489117629593 , -2.3427216787561527 , Positive , Positive , Prediction was Right
+-2.045489117629593 , -2.3425722055205 , Positive , Positive , Prediction was Right
 
 No.148   Not quite there
--2.0803909807627075 , -2.0618950691804585 , Negative , Negative , Prediction was Right
+-2.0803909807627075 , -2.061745595944805 , Negative , Negative , Prediction was Right
 
 No.149   More of a hit or miss episode here
--1.0742562662165964 , -1.148165292778401 , Positive , Negative , Prediction was Wrong
+-1.0742562662165964 , -1.1480158195427477 , Positive , Negative , Prediction was Wrong
 
 No.150   Very un-Seinfeld
--1.419771559713433 , -1.5591212416778393 , Positive , Negative , Prediction was Wrong
+-1.419771559713433 , -1.558971768442186 , Positive , Negative , Prediction was Wrong
 
 No.151   Butchered
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.152   Possibly the worst Seinfeld episode ever
--0.8908219748876908 , -0.9985080903160657 , Positive , Negative , Prediction was Wrong
+-0.8908219748876908 , -0.9983586170804125 , Positive , Negative , Prediction was Wrong
 
 No.153   Is that real fur?
--2.142818536253927 , -1.9890793458857474 , Negative , Positive , Prediction was Wrong
+-2.142818536253927 , -1.9889298726500944 , Negative , Positive , Prediction was Wrong
 
 No.154   Mistakenly underrated.
--2.8460050249911095 , -2.958145631642097 , Positive , Positive , Prediction was Right
+-2.8460050249911095 , -2.9579961584064436 , Positive , Positive , Prediction was Right
 
 No.155   "Maybe the dingo ate your baby!"
--2.1621236914493136 , -2.1328818366128117 , Negative , Positive , Prediction was Wrong
+-2.1621236914493136 , -2.132732363377159 , Negative , Positive , Prediction was Wrong
 
 No.156   A Low Point
--2.271268160874382 , -2.253780595419372 , Negative , Negative , Prediction was Right
+-2.271268160874382 , -2.2536311221837186 , Negative , Negative , Prediction was Right
 
 No.157   Too much and too little happens here
--1.6727476714682907 , -1.5526712050728015 , Negative , Negative , Prediction was Right
+-1.6727476714682907 , -1.5525217318371483 , Negative , Negative , Prediction was Right
 
 No.158   Funny
--1.67488530243811 , -1.773099529933489 , Positive , Positive , Prediction was Right
+-1.67488530243811 , -1.7729500566978358 , Positive , Positive , Prediction was Right
 
 No.159   "These pretzels are making me thirsty!"
--2.2207427785820495 , -2.184542009009174 , Negative , Positive , Prediction was Wrong
+-2.2207427785820495 , -2.1843925357735205 , Negative , Positive , Prediction was Wrong
 
 No.160   Woody
--3.0970610456932524 , -3.259175627306078 , Positive , Positive , Prediction was Right
+-3.0970610456932524 , -3.259026154070425 , Positive , Positive , Prediction was Right
 
 No.161   "Was that wrong? Should I not have done that?"
--1.912246218232714 , -2.157944240515379 , Positive , Positive , Prediction was Right
+-1.912246218232714 , -2.157794767279726 , Positive , Positive , Prediction was Right
 
 No.162   Kramer and George lead the laughs here
--0.9035734765847718 , -1.210928095502104 , Positive , Positive , Prediction was Right
+-0.9035734765847718 , -1.2107786222664507 , Positive , Positive , Prediction was Right
 
 No.163   Good one
--1.2179901105935138 , -1.3951097482158412 , Positive , Positive , Prediction was Right
+-1.2179901105935138 , -1.394960274980188 , Positive , Positive , Prediction was Right
 
 No.164   Way ahead of its time
--1.4879772708383274 , -1.6047584123923637 , Positive , Positive , Prediction was Right
+-1.4879772708383274 , -1.6046089391567104 , Positive , Positive , Prediction was Right
 
 No.165   One hell of an afternoon
--1.2841476890503964 , -1.5328560151953026 , Positive , Positive , Prediction was Right
+-1.2841476890503964 , -1.5327065419596495 , Positive , Positive , Prediction was Right
 
 No.166   "The Subway" is sure to more than hold up on additional viewings due to its twisted story lines
--1.429811176502067 , -1.564570428372509 , Positive , Positive , Prediction was Right
+-1.429811176502067 , -1.564420955136856 , Positive , Positive , Prediction was Right
 
 No.167   Some good laughs in the subway
--1.7615595389511276 , -1.6793920306892678 , Negative , Negative , Prediction was Right
+-1.7615595389511276 , -1.6792425574536145 , Negative , Negative , Prediction was Right
 
 No.168   I did all this for 8 dollars?
--2.639244946168976 , -2.4379897446972323 , Negative , Positive , Prediction was Wrong
+-2.639244946168976 , -2.4378402714615794 , Negative , Positive , Prediction was Wrong
 
 No.169   Excerpts from NY Daily News Classifieds 1/9/92
--2.4765176486712766 , -2.384114363914378 , Negative , Positive , Prediction was Wrong
+-2.4765176486712766 , -2.3839648906787247 , Negative , Positive , Prediction was Wrong
 
 No.170   funny episode with some wokneszz
--0.9926630112926457 , -1.0674452339432217 , Positive , Negative , Prediction was Wrong
+-0.9926630112926457 , -1.0672957607075684 , Positive , Negative , Prediction was Wrong
 
 No.171   Wedding
--2.6594483322572633 , -3.1622656142980214 , Positive , Positive , Prediction was Right
+-2.6594483322572633 , -3.162116141062368 , Positive , Positive , Prediction was Right
 
 No.172   Incredibly silly, therefore a classic
--1.8153362052246576 , -2.1666304197004718 , Positive , Positive , Prediction was Right
+-1.8153362052246576 , -2.1664809464648185 , Positive , Positive , Prediction was Right
 
 No.173   My favorite episode in the entire series
--0.9822470726834162 , -1.0744841964884793 , Positive , Positive , Prediction was Right
+-0.9822470726834162 , -1.074334723252826 , Positive , Positive , Prediction was Right
 
 No.174   Lolly
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.175   Hello, Newman!
--2.1777555144631173 , -2.958145631642097 , Positive , Positive , Prediction was Right
+-2.1777555144631173 , -2.9579961584064436 , Positive , Positive , Prediction was Right
 
 No.176   Fast
--3.203516376607539 , -2.86123561863404 , Negative , Positive , Prediction was Wrong
+-3.203516376607539 , -2.861086145398387 , Negative , Positive , Prediction was Wrong
 
 No.177   "He's bald?"
--3.136569586976926 , -3.048322261991185 , Negative , Positive , Prediction was Wrong
+-3.136569586976926 , -3.0481727887555317 , Negative , Positive , Prediction was Wrong
 
 No.178   "There's a hue"
--2.0713990553721158 , -1.8379831590003288 , Negative , Positive , Prediction was Wrong
+-2.0713990553721158 , -1.8378336857646755 , Negative , Positive , Prediction was Wrong
 
 No.179   "Should I shake his hand?"
--2.312660846032607 , -2.5940638902310265 , Positive , Positive , Prediction was Right
+-2.312660846032607 , -2.593914416995373 , Positive , Positive , Prediction was Right
 
 No.180   This is how you write a sitcom
--1.973067455229265 , -2.3171675742837645 , Positive , Positive , Prediction was Right
+-1.973067455229265 , -2.3170181010481117 , Positive , Positive , Prediction was Right
 
 No.181   "And you want to be my latex salesman..."
--2.170987151780619 , -2.179994381258453 , Positive , Positive , Prediction was Right
+-2.170987151780619 , -2.1798449080228 , Positive , Positive , Prediction was Right
 
 No.182   The fun continues...
--2.243945033663147 , -2.4379897446972323 , Positive , Positive , Prediction was Right
+-2.243945033663147 , -2.4378402714615794 , Positive , Positive , Prediction was Right
 
 No.183   Classic Sitcom Riot
--1.7353332096756593 , -2.259175627306078 , Positive , Positive , Prediction was Right
+-1.7353332096756593 , -2.259026154070425 , Positive , Positive , Prediction was Right
 
 No.184   Lugie
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.185   "Kind of a cute Nazi, though"
--1.8870800499021574 , -2.189137760698323 , Positive , Positive , Prediction was Right
+-1.8870800499021574 , -2.18898828746267 , Positive , Positive , Prediction was Right
 
 No.186   "They can't shoot us in the city"
--1.9874971706519062 , -2.171039538605527 , Positive , Positive , Prediction was Right
+-1.9874971706519062 , -2.1708900653698735 , Positive , Positive , Prediction was Right
 
 No.187   Further replicating the success of "The Chinese Restaurant" whilst adding its own touches
--1.7478257627155693 , -1.8904240077615224 , Positive , Positive , Prediction was Right
+-1.7478257627155693 , -1.8902745345258694 , Positive , Positive , Prediction was Right
 
 No.188   The best Seinfeld episode!
--0.864175372550747 , -0.9896626830881616 , Positive , Positive , Prediction was Right
+-0.864175372550747 , -0.9895132098525083 , Positive , Positive , Prediction was Right
 
 No.189   Obrien
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.190   Is this about Steve Bannon?
--2.6806376313272016 , -2.560205622970059 , Negative , Positive , Prediction was Wrong
+-2.6806376313272016 , -2.560056149734406 , Negative , Positive , Prediction was Wrong
 
 No.191   "Says he's O'Brien-- that's not funny"
--1.446795767051588 , -1.598784528903611 , Positive , Negative , Prediction was Wrong
+-1.446795767051588 , -1.5986350556679576 , Positive , Negative , Prediction was Wrong
 
 No.192   "I'm gonna sew his ass to his face!"
--1.826331589526121 , -1.9318166929197476 , Positive , Positive , Prediction was Right
+-1.826331589526121 , -1.9316672196840943 , Positive , Positive , Prediction was Right
 
 No.193   Wow
--3.344845529404008 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.344845529404008 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.194   adultery is funny????
--1.663604292028421 , -1.7456251069597406 , Positive , Negative , Prediction was Wrong
+-1.663604292028421 , -1.7454756337240873 , Positive , Negative , Prediction was Wrong
 
 No.195   "I don't get art"
--1.6250045070543662 , -1.9421575262579664 , Positive , Positive , Prediction was Right
+-1.6250045070543662 , -1.9420080530223132 , Positive , Positive , Prediction was Right
 
 No.196   Batter
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.197   "What did you do to my car?"
--2.213276213896695 , -2.128841858811072 , Negative , Positive , Prediction was Wrong
+-2.213276213896695 , -2.1286923855754187 , Negative , Positive , Prediction was Wrong
 
 No.198   Boxing
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.199   Kramer the actor
--1.3255694249783505 , -1.6880493502217664 , Positive , Positive , Prediction was Right
+-1.3255694249783505 , -1.687899876986113 , Positive , Positive , Prediction was Right
 
 No.200   "Do you yearn?"
--3.078577639999239 , -2.7820543725864155 , Negative , Positive , Prediction was Wrong
+-3.078577639999239 , -2.7819048993507622 , Negative , Positive , Prediction was Wrong
 
 No.201   Out of place
--2.271268160874382 , -2.157944240515379 , Negative , Negative , Prediction was Right
+-2.271268160874382 , -2.157794767279726 , Negative , Negative , Prediction was Right
 
 No.202   I love this episode.
--1.064862875125008 , -1.1575144587070205 , Positive , Positive , Prediction was Right
+-1.064862875125008 , -1.1573649854713672 , Positive , Positive , Prediction was Right
 
 No.203   Weakest Episode of this Season
--0.9625513365441096 , -1.0530246457098182 , Positive , Negative , Prediction was Wrong
+-0.9625513365441096 , -1.0528751724741652 , Positive , Negative , Prediction was Wrong
 
 No.204   La
--3.203516376607539 , -2.98617435524234 , Negative , Positive , Prediction was Wrong
+-3.203516376607539 , -2.9860248820066873 , Negative , Positive , Prediction was Wrong
 
 No.205   The beginning of true greatness
--2.1687542703483267 , -2.391413602655877 , Positive , Positive , Prediction was Right
+-2.1687542703483267 , -2.3912641294202244 , Positive , Positive , Prediction was Right
 
 No.206   The Smog strangler.
--2.7685928016823316 , -2.7820543725864155 , Positive , Positive , Prediction was Right
+-2.7685928016823316 , -2.7819048993507622 , Positive , Positive , Prediction was Right
 
 No.207   One of the all time worst
--1.1592815830103573 , -1.3336057177627016 , Positive , Negative , Prediction was Wrong
+-1.1592815830103573 , -1.3334562445270486 , Positive , Negative , Prediction was Wrong
 
 No.208   Crazy
--2.334937240743759 , -3.4632956099620027 , Positive , Positive , Prediction was Right
+-2.334937240743759 , -3.4631461367263494 , Positive , Positive , Prediction was Right
 
 No.209   Kramer the serial killer...
--1.3246117741340786 , -1.6793920306892678 , Positive , Positive , Prediction was Right
+-1.3246117741340786 , -1.6792425574536145 , Positive , Positive , Prediction was Right
 
 No.210   Kramer as a serial killer is hilarious!
--1.211798182469295 , -1.6437516744201341 , Positive , Positive , Prediction was Right
+-1.211798182469295 , -1.6436022011844809 , Positive , Positive , Prediction was Right
 
 No.211   Kramer as a serial killer!? I'm in!
--1.2436803006577517 , -1.53387668424771 , Positive , Positive , Prediction was Right
+-1.2436803006577517 , -1.5337272110120568 , Positive , Positive , Prediction was Right
 
 No.212   Away
--2.595466021590389 , -3.4632956099620027 , Positive , Positive , Prediction was Right
+-2.595466021590389 , -3.4631461367263494 , Positive , Positive , Prediction was Right
 
 No.213   Was Clint Howard the Smog Strangler?
--2.4675628060183503 , -2.4810243769224343 , Positive , Positive , Prediction was Right
+-2.4675628060183503 , -2.480874903686781 , Positive , Positive , Prediction was Right
 
 No.214   "Anne Landers sucks!"
--2.996390883811889 , -2.7820543725864155 , Negative , Negative , Prediction was Right
+-2.996390883811889 , -2.7819048993507622 , Negative , Negative , Prediction was Right
 
 No.215   The real beginning of Season 4
--1.3643177530692003 , -1.4892447071691253 , Positive , Positive , Prediction was Right
+-1.3643177530692003 , -1.4890952339334722 , Positive , Positive , Prediction was Right
 
 No.216   "You must have a good story"
--1.5152943658047424 , -1.5168433449489296 , Positive , Positive , Prediction was Right
+-1.5152943658047424 , -1.5166938717132765 , Positive , Positive , Prediction was Right
 
 No.217   The Pitch&The Ticket are both Classic episodes that I love, as they crack me up every time I watch them!
--1.1163662008886388 , -1.311619379114955 , Positive , Positive , Prediction was Right
+-1.1163662008886388 , -1.311469905879302 , Positive , Positive , Prediction was Right
 
 No.218   Ha ha
--3.2546688990549204 , -2.958145631642097 , Negative , Positive , Prediction was Wrong
+-3.2546688990549204 , -2.9579961584064436 , Negative , Positive , Prediction was Wrong
 
 No.219   George: Yeah, but nothing happens on the show. Oh, no. No stories. No, no, no! Nothing happens!
--0.860436171841561 , -1.0354850372860127 , Positive , Positive , Prediction was Right
+-0.860436171841561 , -1.0353355640503594 , Positive , Positive , Prediction was Right
 
 No.220   To say that Wayne Knight steals the show in this episode is an understatement if ever there was one...
--0.7430361648879854 , -0.8543419106861397 , Positive , Positive , Prediction was Right
+-0.7430361648879854 , -0.8541924374504867 , Positive , Positive , Prediction was Right
 
 No.221   The madness continues
--2.652608907726958 , -2.670903920463749 , Positive , Positive , Prediction was Right
+-2.652608907726958 , -2.6707544472280955 , Positive , Positive , Prediction was Right
 
 No.222   The Pitch&The Ticket are both Classic episodes,that I love, as they crack me up every time I watch them!
--1.1163662008886388 , -1.311619379114955 , Positive , Positive , Prediction was Right
+-1.1163662008886388 , -1.311469905879302 , Positive , Positive , Prediction was Right
 
 No.223   Newwwwwman
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.224   Family troubles
--3.043815533740027 , -3.048322261991185 , Positive , Positive , Prediction was Right
+-3.043815533740027 , -3.0481727887555317 , Positive , Positive , Prediction was Right
 
 No.225   Easily on of the weakest in Season 4
--1.4421733341536676 , -1.5859242640922286 , Positive , Negative , Prediction was Wrong
+-1.4421733341536676 , -1.5857747908565754 , Positive , Negative , Prediction was Wrong
 
 No.226   The Wallet is a fantastic episode, that's very, very funny, the ending is funny but makes me shake my head all the time due to Morty's stupidity!
--0.7422847179376281 , -0.8471352971144195 , Positive , Positive , Prediction was Right
+-0.7422847179376281 , -0.8469858238787663 , Positive , Positive , Prediction was Right
 
 No.227   Cheap
--2.8253204261312583 , -3.259175627306078 , Positive , Positive , Prediction was Right
+-2.8253204261312583 , -3.259026154070425 , Positive , Positive , Prediction was Right
 
 No.228   Uncle Leo and Dr. Reston
--2.2546688990549204 , -2.4298718544750533 , Positive , Positive , Prediction was Right
+-2.2546688990549204 , -2.4297223812394 , Positive , Positive , Prediction was Right
 
 No.229   Still didn't quite take off
--1.5895571619798687 , -1.7456251069597406 , Positive , Negative , Prediction was Wrong
+-1.5895571619798687 , -1.7454756337240873 , Positive , Negative , Prediction was Wrong
 
 No.230   The Watch is a fantastic episode, that's really quite hilarious, Jessica Lundy is a riot as the girl with the creepy laugh!
--0.8237074456999717 , -0.9002894229002087 , Positive , Positive , Prediction was Right
+-0.8237074456999717 , -0.9001399496645555 , Positive , Positive , Prediction was Right
 
 No.231   At last the 'arc' comes to an end
--1.7394575947271183 , -1.8722310029355036 , Positive , Negative , Prediction was Wrong
+-1.7394575947271183 , -1.8720815296998503 , Positive , Negative , Prediction was Wrong
 
 No.232   Tick
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.233   "He lives in a bubble!"
--2.228339960332571 , -2.539016323900121 , Positive , Positive , Prediction was Right
+-2.228339960332571 , -2.538866850664468 , Positive , Positive , Prediction was Right
 
 No.234   "That stupid idiot!"
--2.5345095956489634 , -2.7472922663272037 , Positive , Positive , Prediction was Right
+-2.5345095956489634 , -2.7471427930915504 , Positive , Positive , Prediction was Right
 
 No.235   The Bubble Boy is a true classic and one of my top 15 favorites on Seinfeld!, as it's simply one of the best ever in my opinion!
--0.6971616971492623 , -0.9460997120120284 , Positive , Positive , Prediction was Right
+-0.6971616971492623 , -0.9459502387763752 , Positive , Positive , Prediction was Right
 
 No.236   Pop
--3.344845529404008 , -3.1622656142980214 , Negative , Positive , Prediction was Wrong
+-3.344845529404008 , -3.162116141062368 , Negative , Positive , Prediction was Wrong
 
 No.237   ".... and they're all laid out for me."
--2.23868079367079 , -2.2989427541775656 , Positive , Positive , Prediction was Right
+-2.23868079367079 , -2.2987932809419127 , Positive , Positive , Prediction was Right
 
 No.238   The Cheever Letters is a brilliant little episode, that always has me in stitches, as it has some of my favorite quotes in it!
--0.9540462454391567 , -1.0072333855070508 , Positive , Positive , Prediction was Right
+-0.9540462454391567 , -1.0070839122713977 , Positive , Positive , Prediction was Right
 
 No.239   "That's absolutely filthy"
--1.885917279510365 , -2.128841858811072 , Positive , Positive , Prediction was Right
+-1.885917279510365 , -2.1286923855754187 , Positive , Positive , Prediction was Right
 
 No.240   Boo
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.241   Crazy Joe Davola
--1.915963454751665 , -2.98617435524234 , Positive , Positive , Prediction was Right
+-1.915963454751665 , -2.9860248820066873 , Positive , Positive , Prediction was Right
 
 No.242   The Opera while not quite as good as the others in Season 4 is still an excellent episode that I love!
--0.7966924362929214 , -0.897920107247929 , Positive , Positive , Prediction was Right
+-0.7966924362929214 , -0.8977706340122759 , Positive , Positive , Prediction was Right
 
 No.243   Much fun to be had around Crazy Joe Davola here
--1.4697842660123082 , -1.675127238820835 , Positive , Negative , Prediction was Wrong
+-1.4697842660123082 , -1.6749777655851819 , Positive , Negative , Prediction was Wrong
 
 No.244   "I'm a day person"
--1.8084813585789086 , -2.022386527896785 , Positive , Positive , Prediction was Right
+-1.8084813585789086 , -2.0222370546611317 , Positive , Positive , Prediction was Right
 
 No.245   Elaine: You know, it is so sad. All your knowledge of high culture comes from Bugs Bunny cartoons.
--1.1723324119638618 , -1.3533797469382096 , Positive , Positive , Prediction was Right
+-1.1723324119638618 , -1.3532302737025566 , Positive , Positive , Prediction was Right
 
 No.246   The opera is good
--1.854562828626375 , -1.8178733406129108 , Negative , Positive , Prediction was Wrong
+-1.854562828626375 , -1.8177238673772576 , Negative , Positive , Prediction was Wrong
 
 No.247   Ahhr
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.248   Pilots and virgins
--3.078577639999239 , -2.8400463195641024 , Negative , Positive , Prediction was Wrong
+-3.078577639999239 , -2.839896846328449 , Negative , Positive , Prediction was Wrong
 
 No.249   "Russell?"
--2.595466021590389 , -3.259175627306078 , Positive , Positive , Prediction was Right
+-2.595466021590389 , -3.259026154070425 , Positive , Positive , Prediction was Right
 
 No.250   Sets Up The Contest
--2.1754876530072953 , -2.6307866972557665 , Positive , Positive , Prediction was Right
+-2.1754876530072953 , -2.6306372240201132 , Positive , Positive , Prediction was Right
 
 No.251   Wee
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.252   Juvenile theme
--2.9674271878765723 , -2.98617435524234 , Positive , Negative , Prediction was Wrong
+-2.9674271878765723 , -2.9860248820066873 , Positive , Negative , Prediction was Wrong
 
 No.253   "I'm out!"
--2.025819590836439 , -2.109187170814602 , Positive , Positive , Prediction was Right
+-2.025819590836439 , -2.1090376975789487 , Positive , Positive , Prediction was Right
 
 No.254   "Here, have some Tic-Tacs"
--2.8567288903828825 , -2.560205622970059 , Negative , Positive , Prediction was Wrong
+-2.8567288903828825 , -2.560056149734406 , Negative , Positive , Prediction was Wrong
 
 No.255   The greatest episode of Seinfeld
--0.9215996554672004 , -1.0189384843059752 , Positive , Positive , Prediction was Right
+-0.9215996554672004 , -1.018789011070322 , Positive , Positive , Prediction was Right
 
 No.256   The Funniest
--2.2798119344176757 , -2.9069931091947154 , Positive , Positive , Prediction was Right
+-2.2798119344176757 , -2.906843635959062 , Positive , Positive , Prediction was Right
 
 No.257   It has been called the #1 best episode in television history, and for good reason!
--0.9110141763230224 , -0.9997012077750026 , Positive , Positive , Prediction was Right
+-0.9110141763230224 , -0.9995517345393494 , Positive , Positive , Prediction was Right
 
 No.258   "Are You Master Of Your Domain?"
--2.3869068744047195 , -2.4810243769224343 , Positive , Positive , Prediction was Right
+-2.3869068744047195 , -2.480874903686781 , Positive , Positive , Prediction was Right
 
 No.259   "somethings gotta give "
--2.31577408145675 , -2.670903920463749 , Positive , Positive , Prediction was Right
+-2.31577408145675 , -2.6707544472280955 , Positive , Positive , Prediction was Right
 
 No.260   Greatest episode in TV history
--1.048011648333635 , -1.158805082188515 , Positive , Positive , Prediction was Right
+-1.048011648333635 , -1.158655608952862 , Positive , Positive , Prediction was Right
 
 No.261   Sitcom episode Story and Comedy Perfection
--0.9288454800521756 , -1.0632759748968441 , Positive , Positive , Prediction was Right
+-0.9288454800521756 , -1.063126501661191 , Positive , Positive , Prediction was Right
 
 No.262   The definition of a Seinfeld Classic
--1.3040606742706893 , -1.4792185760591718 , Positive , Positive , Prediction was Right
+-1.3040606742706893 , -1.4790691028235188 , Positive , Positive , Prediction was Right
 
 No.263   Kennedy or Laguardia?
--2.5611617904204036 , -2.7820543725864155 , Positive , Positive , Prediction was Right
+-2.5611617904204036 , -2.7819048993507622 , Positive , Positive , Prediction was Right
 
 No.264   Great humor about airports and airplane travel
--1.6224647660040934 , -1.810083096186659 , Positive , Positive , Prediction was Right
+-1.6224647660040934 , -1.809933622951006 , Positive , Positive , Prediction was Right
 
 No.265   Have you ever flown first class?
--1.4865860433317806 , -1.7245150514776335 , Positive , Positive , Prediction was Right
+-1.4865860433317806 , -1.7243655782419802 , Positive , Positive , Prediction was Right
 
 No.266   Not one of the best but still a Seinfeld material.
--0.9184594069199711 , -1.1452322749992412 , Positive , Positive , Prediction was Right
+-0.9184594069199711 , -1.1450828017635881 , Positive , Positive , Prediction was Right
 
 No.267   Jerry and Elaine are traveling from St. Louis on their flight back to New York City. George and Kramer plan on picking them up at the airport due to George's bet with Jerry.
--0.4148767146095911 , -0.740168451166311 , Positive , Positive , Prediction was Right
+-0.4148767146095911 , -0.7400189779306579 , Positive , Positive , Prediction was Right
 
 No.268   Blurb
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.269   This one sure picked me up.
--1.2676174259822863 , -1.5198010940559001 , Positive , Positive , Prediction was Right
+-1.2676174259822863 , -1.519651620820247 , Positive , Positive , Prediction was Right
 
 No.270   Jerry picks his nose and Elaine sends out embarrassing Xmas cards!
--0.8809525404181008 , -1.1877539215606931 , Positive , Positive , Prediction was Right
+-0.8809525404181008 , -1.18760444832504 , Positive , Positive , Prediction was Right
 
 No.271   Brilliant Parody of Shylock's Speech from Shakespeare's Merchant of Venice
--2.097061045693252 , -2.1984777869524663 , Positive , Positive , Prediction was Right
+-2.097061045693252 , -2.198328313716813 , Positive , Positive , Prediction was Right
 
 No.272   "Was there any nostril penetration?"
--2.7598188773748262 , -2.560205622970059 , Negative , Positive , Prediction was Wrong
+-2.7598188773748262 , -2.560056149734406 , Negative , Positive , Prediction was Wrong
 
 No.273   Slip
--3.203516376607539 , -3.4632956099620027 , Positive , Positive , Prediction was Right
+-3.203516376607539 , -3.4631461367263494 , Positive , Positive , Prediction was Right
 
 No.274   Feels like territory covered many times in the past
--1.4049424548585925 , -1.4347243572694652 , Positive , Positive , Prediction was Right
+-1.4049424548585925 , -1.434574884033812 , Positive , Positive , Prediction was Right
 
 No.275   "What a night"
--2.768592801682331 , -2.605963113530734 , Negative , Negative , Prediction was Right
+-2.768592801682331 , -2.605813640295081 , Negative , Negative , Prediction was Right
 
 No.276   best episode of season 4
--0.8778639060352257 , -1.013662959491928 , Positive , Positive , Prediction was Right
+-0.8778639060352257 , -1.013513486256275 , Positive , Positive , Prediction was Right
 
 No.277   Aw no
--3.2546688990549204 , -2.958145631642097 , Negative , Positive , Prediction was Wrong
+-3.2546688990549204 , -2.9579961584064436 , Negative , Positive , Prediction was Wrong
 
 No.278   George Costanza strikes again and again
--1.0862450809517745 , -1.3936275130504072 , Positive , Positive , Prediction was Right
+-1.0862450809517745 , -1.393478039814754 , Positive , Positive , Prediction was Right
 
 No.279   George is such an idiot.
--1.108540863376682 , -1.4164104191242928 , Positive , Positive , Prediction was Right
+-1.108540863376682 , -1.4162609458886395 , Positive , Positive , Prediction was Right
 
 No.280   "Happy birthday? No such thing"
--2.0194561878805826 , -2.1369597490332515 , Positive , Positive , Prediction was Right
+-2.0194561878805826 , -2.136810275797598 , Positive , Positive , Prediction was Right
 
 No.281   Baseball
--2.9402749418329575 , -3.259175627306078 , Positive , Positive , Prediction was Right
+-2.9402749418329575 , -3.259026154070425 , Positive , Positive , Prediction was Right
 
 No.282   Everything about Seinfeld is perfect
--1.3142146741012286 , -1.4846586615775283 , Positive , Positive , Prediction was Right
+-1.3142146741012286 , -1.4845091883418753 , Positive , Positive , Prediction was Right
 
 No.283   Jerry Seinfeld: Looking at cleavage is like looking at the sun. You don't stare at it, it's too risky. You get a sense of it then you look away.
--0.7182682956571804 , -0.9364396228361277 , Positive , Positive , Prediction was Right
+-0.7182682956571804 , -0.9362901496004745 , Positive , Positive , Prediction was Right
 
 No.284   Elaine Reduced To A Sex Object & Works It For Humor!
--1.2676174259822863 , -1.472069534269508 , Positive , Positive , Prediction was Right
+-1.2676174259822863 , -1.4719200610338548 , Positive , Positive , Prediction was Right
 
 No.285   Best sitcom ever.
--1.4548977154739344 , -1.9447816700841152 , Positive , Positive , Prediction was Right
+-1.4548977154739344 , -1.9446321968484621 , Positive , Positive , Prediction was Right
 
 No.286   "You never saw people so pleased"
--1.6539682029896827 , -2.0039031222027717 , Positive , Negative , Prediction was Wrong
+-1.6539682029896827 , -2.003753648967119 , Positive , Negative , Prediction was Wrong
 
 No.287   Elaine reduced to sex object. No thanks.
--1.329743821822887 , -1.5893940120975414 , Positive , Negative , Prediction was Wrong
+-1.329743821822887 , -1.5892445388618883 , Positive , Negative , Prediction was Wrong
 
 No.288   Whoops
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.289   Other Reviewers Missing the Point
--2.097061045693252 , -2.086718652905491 , Negative , Positive , Prediction was Wrong
+-2.097061045693252 , -2.0865691796698376 , Negative , Positive , Prediction was Wrong
 
 No.290   "They don't know what's going on"
--1.67132840719243 , -1.7930497568878787 , Positive , Positive , Prediction was Right
+-1.67132840719243 , -1.7929002836522254 , Positive , Positive , Prediction was Right
 
 No.291   One of the Best of the Best
--1.0495322296719352 , -1.3447002447382408 , Positive , Positive , Prediction was Right
+-1.0495322296719352 , -1.3445507715025877 , Positive , Positive , Prediction was Right
 
 No.292   A Script based upon a lot more than nothing
--1.6032697260430449 , -1.7357543529334463 , Positive , Positive , Prediction was Right
+-1.6032697260430449 , -1.735604879697793 , Positive , Positive , Prediction was Right
 
 No.293   Lighten up already!
--2.4417555424120647 , -2.670903920463749 , Positive , Positive , Prediction was Right
+-2.4417555424120647 , -2.6707544472280955 , Positive , Positive , Prediction was Right
 
 No.294   It is satire
--2.8153362052246576 , -2.7820543725864155 , Negative , Positive , Prediction was Wrong
+-2.8153362052246576 , -2.7819048993507622 , Negative , Positive , Prediction was Wrong
 
 No.295   Oil
--3.344845529404008 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.344845529404008 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.296   "There's a void"
--2.0713990553721158 , -1.8379831590003288 , Negative , Negative , Prediction was Right
+-2.0713990553721158 , -1.8378336857646755 , Negative , Negative , Prediction was Right
 
 No.297   "It's like a sauna in here"
--1.6340124192352994 , -1.6307866972557665 , Negative , Positive , Prediction was Wrong
+-1.6340124192352994 , -1.6306372240201132 , Negative , Positive , Prediction was Wrong
 
 No.298   Double-dipped! I am definitely double-broken hearted that this best sitcom ever had to end one day.
--0.9854479175249096 , -1.287783796598555 , Positive , Positive , Prediction was Right
+-0.9854479175249096 , -1.287634323362902 , Positive , Positive , Prediction was Right
 
 No.299   Boing
--3.555698894718901 , -3.259175627306078 , Negative , Positive , Prediction was Wrong
+-3.555698894718901 , -3.259026154070425 , Negative , Positive , Prediction was Wrong
 
 No.300   Juvenile humor
--2.4334830164460746 , -2.6851443595783593 , Positive , Negative , Prediction was Wrong
+-2.4334830164460746 , -2.684994886342706 , Positive , Negative , Prediction was Wrong
 
 No.301   Females may feel uncomfortable
--2.093300896819945 , -2.0384139733309357 , Negative , Negative , Prediction was Right
+-2.093300896819945 , -2.0382645000952824 , Negative , Negative , Prediction was Right
 
 No.302   Stupidity Is No Defense...
--2.6014563852795765 , -2.6571156359781156 , Positive , Positive , Prediction was Right
+-2.6014563852795765 , -2.6569661627424623 , Positive , Positive , Prediction was Right
 
 No.303   Those who have missed this one have missed a lot.
--1.223260434803296 , -1.4355384052714493 , Positive , Positive , Prediction was Right
+-1.223260434803296 , -1.435388932035796 , Positive , Positive , Prediction was Right
 
 No.304   "Oh... You!"
--2.3415175860550805 , -2.800537778280429 , Positive , Positive , Prediction was Right
+-2.3415175860550805 , -2.8003883050447755 , Positive , Positive , Prediction was Right
 
 No.305   Oh no
--2.3415175860550805 , -2.800537778280429 , Positive , Positive , Prediction was Right
+-2.3415175860550805 , -2.8003883050447755 , Positive , Positive , Prediction was Right
 
 No.306   Cosmo Kramer: Who's gonna turn down a Junior Mint? It's chocolate, it's peppermint, it's delicious.
--1.2726805018976393 , -1.5463155626416207 , Positive , Negative , Prediction was Wrong
+-1.2726805018976393 , -1.5461660894059674 , Positive , Negative , Prediction was Wrong
 
 No.307   "It's the beast!"
--2.996390883811889 , -2.7820543725864155 , Negative , Positive , Prediction was Wrong
+-2.996390883811889 , -2.7819048993507622 , Negative , Positive , Prediction was Wrong
 
 No.308   Easter egg for George
--1.1130231885963568 , -1.4226932698479295 , Positive , Positive , Prediction was Right
+-1.1130231885963568 , -1.4225437966122765 , Positive , Positive , Prediction was Right
 
 No.309   Smelly
--3.0970610456932524 , -3.4632956099620027 , Positive , Positive , Prediction was Right
+-3.0970610456932524 , -3.4631461367263494 , Positive , Positive , Prediction was Right
 
 No.310   OK
--2.9402749418329575 , -3.259175627306078 , Positive , Negative , Prediction was Wrong
+-2.9402749418329575 , -3.259026154070425 , Positive , Negative , Prediction was Wrong
 
 No.311   What can be said about this one?
--1.2423590508345939 , -1.4995077826164476 , Positive , Positive , Prediction was Right
+-1.2423590508345939 , -1.4993583093807943 , Positive , Positive , Prediction was Right
 
 No.312   "It's like you're almost glad to be handicapped"
--1.5298811914668924 , -1.539016323900121 , Positive , Negative , Prediction was Wrong
+-1.5298811914668924 , -1.538866850664468 , Positive , Negative , Prediction was Wrong
 
 No.313   Tv
--2.2885271663158875 , -3.4632956099620027 , Positive , Positive , Prediction was Right
+-2.2885271663158875 , -3.4631461367263494 , Positive , Positive , Prediction was Right
 
 No.314   "The Pilot" is a great episode full of laughs
--0.9459711231459719 , -1.0426798393362378 , Positive , Positive , Prediction was Right
+-0.9459711231459719 , -1.0425303661005845 , Positive , Positive , Prediction was Right
 
 No.315   "Did he just stole the raisins?"
--2.5397107893347712 , -2.4810243769224343 , Negative , Positive , Prediction was Wrong
+-2.5397107893347712 , -2.480874903686781 , Negative , Positive , Prediction was Wrong
 
 No.316   C.K.: I like his style. He has a sort of casual elegance. TIA: But he picks his nose. C.K.: Nevertheless...
--1.4330734978095045 , -1.416410419124293 , Negative , Positive , Prediction was Wrong
+-1.4330734978095045 , -1.4162609458886397 , Negative , Positive , Prediction was Wrong
 
 No.317   Who took the Raisins?
--2.572298156538363 , -2.4298718544750533 , Negative , Positive , Prediction was Wrong
+-2.572298156538363 , -2.4297223812394 , Negative , Positive , Prediction was Wrong
 
 No.318   Negative
--3.344845529404008 , -2.86123561863404 , Negative , Positive , Prediction was Wrong
+-3.344845529404008 , -2.861086145398387 , Negative , Positive , Prediction was Wrong
 
 Prediction Correctness is 62.264150943396224%
