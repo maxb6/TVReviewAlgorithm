@@ -489,7 +489,7 @@ def testReviewTitles(smoothing):
     numReviews = len(reviewDict)
     precision = (correctnessCounter / numReviews) * 100
 
-    resultFile.write("Prediction Correctness is " + str(precision) + "%")
+    resultFile.write("Prediction Correctness is " + str(precision) + "%\n\n")
     return precision
 
 
@@ -680,7 +680,7 @@ def testReviewTitlesSmoothing2(smoothing):
     numReviews = len(reviewDict)
     precision = (correctnessCounter / numReviews) * 100
 
-    resultSmoothingFile.write("Prediction Correctness is " + str(precision) + "%")
+    resultSmoothingFile.write("Prediction Correctness is " + str(precision) + "%\n\n")
     return precision
 
 
@@ -716,6 +716,7 @@ def computeFrequencyLength2(wordList):
     wordList = str(wordList).split()
     wordFreq = []
     for w in wordList:
+        w.replace(' ', '').replace("'","")
         if len(w) <= 2:
             wordList.remove(w)
         else:
@@ -728,6 +729,7 @@ def computeFrequencyLength4(wordList):
     wordList = str(wordList).split()
     wordFreq = []
     for w in wordList:
+        w.replace(' ', '').replace("'","")
         if len(w) > 4:
             wordFreq.append(wordList.count(w))
         else:
@@ -740,6 +742,7 @@ def computeFrequencyLength9(wordList):
     wordList = str(wordList).split()
     wordFreq = []
     for w in wordList:
+        w.replace(' ', '').replace("'","")
         if len(w) < 9:
             wordFreq.append(wordList.count(w))
         else:
@@ -805,6 +808,7 @@ negDictLength2 = computeFrequencyLength2(season4negList)
 # Removing Lenth 4
 posDictLength4 = computeFrequencyLength4(season4posList)
 negDictLength4 = computeFrequencyLength4(season4negList)
+
 computeProbabilityLength(posDictLength4, negDictLength4, 1)
 # Removing Lenth 9
 posDictLength9 = computeFrequencyLength9(season4posList)
@@ -812,9 +816,8 @@ negDictLength9 = computeFrequencyLength9(season4negList)
 # computeProbabilityLength(posDictLength9, negDictLength9, 1)
 
 totalWords = []
+def testReviewTitlesLength(posDict, negDict, smoothing):
 
-
-def testReviewTitlesLength(smoothing):
     count2 = 1
 
     reviewDict = dict(zip(titleReview, ratingPosNeg))
@@ -882,23 +885,18 @@ def testReviewTitlesLength(smoothing):
     numReviews = len(reviewDict)
     precision = (correctnessCounter / numReviews) * 100
 
-    resultLengthFile.write("Prediction Correctness is " + str(precision) + "%")
-    # print(totalWords)
+    resultLengthFile.write("Prediction Correctness is " + str(precision) + "%\n\n")
+    #print(totalWords)
     return precision
 
-
-testReviewTitlesLength(1)
-totalWordsLeft = float(totalWords[0])
-
 # changing length value
-length2 = testReviewTitlesLength(1)
-length4 = testReviewTitlesLength(1)
-length9 = testReviewTitlesLength(1)
+length2 = testReviewTitlesLength(posDictLength2,negDictLength2,1)
+length4 = testReviewTitlesLength(posDictLength4,negDictLength4,1)
+length9 = testReviewTitlesLength(posDictLength9,negDictLength9,1)
 
 # Matplotlib plotting
-
 lengthValues = 2, 4, 9
-precisionLengthValues = length2 / totalWordsLeft, length4 / totalWordsLeft, length9 / totalWordsLeft
+precisionLengthValues = length2, length4, length9
 
 plt.scatter(precisionLengthValues, lengthValues)
 plt.title("Word Length Filtering")
