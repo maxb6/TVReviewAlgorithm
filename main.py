@@ -154,6 +154,9 @@ def extractReviewData(seasonURL, posWordList, negWordList):
 def computeFrequency(wordList):
     wordList = str(wordList).split()
     wordFreq = []
+    wordList = [word.replace("[", "") for word in wordList]
+    wordList = [word.replace("]", "") for word in wordList]
+
     for w in wordList:
         wordFreq.append(wordList.count(w))
 
@@ -547,8 +550,70 @@ def computeProbabilitySmoothing(dictPos, dictNeg, smoothing):
 
 resultSmoothingFile = open("smooth-result.txt", "w")
 
+def testReviewTitlesSmoothing1(smoothing):
+    count2 = 1
 
-def testReviewTitlesSmoothing(smoothing):
+    reviewDict = dict(zip(titleReview, ratingPosNeg))
+    # print(reviewDict)
+
+    correctnessCounter = 0
+
+    for reviewTitle in reviewDict:
+        # make the review name a list of words
+        reviewName = reviewTitle.lower().replace(".", " ").replace("(", " ").replace(")", " ").replace("?",
+                                                                                                       " ").replace(
+            "!",
+            " ").replace(
+            ":", " ").replace(";", " ").replace(",", " ").replace("\\", " ").replace("[", " ").replace("]",
+                                                                                                       " ").replace(
+            "[", " ").replace('"', ' ').replace('"]', ' ').replace("*", " ").replace("-", " ")
+        reviewName = reviewName.split()
+        # print(reviewName)
+
+        totalPosFrequency = 0
+        totalNegFrequency = 0
+        for word in reviewName:
+            if word in posDict:
+                posFrequency = posDict[word] + smoothing
+            else:
+                posFrequency = smoothing
+            if word in negDict:
+                negFrequency = negDict[word]
+            else:
+                negFrequency = smoothing
+
+            # print(word, "  Frequency in Pos: ", posFrequency, "  Frequency in Neg: ", negFrequency)
+
+            totalPosFrequency += posFrequency
+            totalNegFrequency += negFrequency
+
+        # print("TotalPosFrequency ", totalPosFrequency, " TotalNegFrequency ", totalNegFrequency)
+
+        posSize = len(posDict)
+        negSize = len(negDict)
+
+        posProbability = math.log10(totalPosFrequency / posSize)
+        negProbability = math.log10(totalNegFrequency / negSize)
+
+        actual = reviewDict[reviewTitle]
+
+        if posProbability > negProbability:
+            prediction = "Positive"
+        else:
+            prediction = "Negative"
+
+        if prediction == actual:
+            correctness = "Prediction was Right"
+            correctnessCounter += 1
+        else:
+            correctness = "Prediction was Wrong"
+
+    numReviews = len(reviewDict)
+    precision = (correctnessCounter / numReviews) * 100
+
+    return precision
+
+def testReviewTitlesSmoothing2(smoothing):
     count2 = 1
 
     reviewDict = dict(zip(titleReview, ratingPosNeg))
@@ -622,12 +687,12 @@ def testReviewTitlesSmoothing(smoothing):
 print("\nPerforming Task 2.2: Word Smoothing Filtering ....\n")
 
 # changing smoothing value
-precision12 = testReviewTitles(1.2)
-precision14 = testReviewTitles(1.4)
-precision16 = testReviewTitlesSmoothing(1.6)
-precision18 = testReviewTitles(1.8)
-precision2 = testReviewTitles(2)
-precision1 = testReviewTitles(1)
+precision12 = testReviewTitlesSmoothing1(1.2)
+precision14 = testReviewTitlesSmoothing1(1.4)
+precision16 = testReviewTitlesSmoothing2(1.6)
+precision18 = testReviewTitlesSmoothing1(1.8)
+precision2 = testReviewTitlesSmoothing1(2)
+precision1 = testReviewTitlesSmoothing1(1)
 
 # Write results of 1.6
 computeProbabilitySmoothing(posDict, negDict, 1.6)
@@ -643,9 +708,6 @@ plt.xlabel("Precision Values (%)")
 plt.ylabel("Smoothing Values")
 plt.show()
 
-
-
-
 ########## TASK 2.3: WORD LENGTH FILTERING ################
 print("\nPerforming Task 2.3: Word Length Filtering ....\n")
 
@@ -657,10 +719,11 @@ def computeFrequencyLength2(wordList):
         w.replace(' ', '').replace("'","")
         if len(w) <= 2:
             wordList.remove(w)
-        else: 
+        else:
             wordFreq.append(wordList.count(w))
 
     return dict(zip(wordList, wordFreq))
+
 
 def computeFrequencyLength4(wordList):
     wordList = str(wordList).split()
@@ -669,11 +732,11 @@ def computeFrequencyLength4(wordList):
         w.replace(' ', '').replace("'","")
         if len(w) > 4:
             wordFreq.append(wordList.count(w))
-        else: 
+        else:
             wordList.remove(w)
 
-
     return dict(zip(wordList, wordFreq))
+
 
 def computeFrequencyLength9(wordList):
     wordList = str(wordList).split()
@@ -682,10 +745,11 @@ def computeFrequencyLength9(wordList):
         w.replace(' ', '').replace("'","")
         if len(w) < 9:
             wordFreq.append(wordList.count(w))
-        else: 
+        else:
             wordList.remove(w)
 
     return dict(zip(wordList, wordFreq))
+
 
 def computeProbabilityLength(dictPos, dictNeg, smoothing):
     count1 = 1
@@ -737,21 +801,23 @@ def computeProbabilityLength(dictPos, dictNeg, smoothing):
 
 resultLengthFile = open("length-result.txt", "w")
 
-#Removing Lenth 2
+# Removing Lenth 2
 posDictLength2 = computeFrequencyLength2(season4posList)
 negDictLength2 = computeFrequencyLength2(season4negList)
-#computeProbabilityLength(posDictLength2, negDictLength2, 1)
-#Removing Lenth 4
+# computeProbabilityLength(posDictLength2, negDictLength2, 1)
+# Removing Lenth 4
 posDictLength4 = computeFrequencyLength4(season4posList)
 negDictLength4 = computeFrequencyLength4(season4negList)
-#computeProbabilityLength(posDictLength4, negDictLength4, 1)
-#Removing Lenth 9
+
+computeProbabilityLength(posDictLength4, negDictLength4, 1)
+# Removing Lenth 9
 posDictLength9 = computeFrequencyLength9(season4posList)
 negDictLength9 = computeFrequencyLength9(season4negList)
-computeProbabilityLength(posDictLength9, negDictLength9, 1)
+# computeProbabilityLength(posDictLength9, negDictLength9, 1)
 
 totalWords = []
 def testReviewTitlesLength(posDict, negDict, smoothing):
+
     count2 = 1
 
     reviewDict = dict(zip(titleReview, ratingPosNeg))
