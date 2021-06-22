@@ -14,7 +14,7 @@ Libraries Used:
 
 Program Instructions:
 - Program Start.
-- All of Season 1,2,3,4 reviews are being webscraped.
+- All of Season 1,2,3,4 reviews of the show Seinfeld are being webscraped.
 - Calculating the probabilities, this is where model.txt is created.
 - The data.csv file is made, the output can also be seen on the output terminal.
 - Testing the data and reviews with our probabilites, this is where result.txt is created.
